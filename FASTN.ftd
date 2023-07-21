@@ -8,6 +8,7 @@ favicon: /-/saurabh-lohiya.github.io/portfolio/favicon.ico
 -- fastn.dependency: fastn-community.github.io/roboto-typography
 
 -- fastn.auto-import: saurabh-lohiya.github.io/portfolio/FASTN/ds
+-- fastn.auto-import: saurabh-lohiya.github.io/portfolio/common
 -- fastn.auto-import: saurabh-lohiya.github.io/portfolio/assets
 -- fastn.auto-import: doc-site
 
@@ -15,4 +16,12 @@ favicon: /-/saurabh-lohiya.github.io/portfolio/favicon.ico
 
 # Home: index.html
 
-- Right Sidebar Sample: /sidebar/
+;;# About Me: #about-me
+;;
+;;# Services: #services
+;;
+;;# Portfolio: #portfolio
+;;
+;;# Blog: #blog
+;;
+;;# Contact: #contact
