@@ -15,6 +15,7 @@ favicon: /-/saurabh-lohiya.github.io/portfolio/favicon.ico
 -- fastn.sitemap:
 
 # Home: index.html
+font-icon: /assets/home.svg
 
 ;;# About Me: #about-me
 ;;

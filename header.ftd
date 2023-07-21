@@ -17,6 +17,9 @@ ftd.image-src menu-icon:
 sticky: true
 width if { ftd.device == "mobile" }: fill-container
 
+;;-- ftd.text: $obj.title
+;;$loop$: $header.sections as $obj
+
 -- ftd.mobile:
 
 -- header-mobile: $header.site-name
@@ -52,6 +55,7 @@ sections: $header.sections
 -- header-desktop: $header.site-name
 site-url: $header.site-url 
 site-logo: $header.site-logo
+sections: $header.sections
 
 -- end: ftd.desktop
   
@@ -92,7 +96,7 @@ style: bold
 
 -- sub-section: $obj.title
 $loop$: $header-desktop.sections as $obj
-;;icon: $obj.icon
+font-icon: $obj.font-icon
 
 -- end: ftd.column
 
@@ -278,7 +282,7 @@ padding-top.px: 24
 
 -- component sub-section:
 caption title:
-ftd.image-src icon: $assets.files.assets.portfolio.svg
+optional ftd.image-src font-icon: $assets.files.assets.portfolio.svg
 boolean $active: false
 
 -- ftd.column:
@@ -291,7 +295,8 @@ border-bottom-width.px: 1
 border-bottom-color: $common.base-secondary
 
 -- ftd.image:
-src: $sub-section.icon
+if: { sub-section.font-icon != NULL }
+src: $sub-section.font-icon
 width.fixed.px: 24
 height.fixed.px: 24
 

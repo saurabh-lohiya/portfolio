@@ -1,4 +1,5 @@
 -- import: saurabh-lohiya.github.io/portfolio/assets
+-- import: fastn/processors as pr
 
 -- ftd.color text-strong: #090a0c
 
@@ -113,6 +114,14 @@ caption title:
 -- record achievement:
 caption title:
 ftd.image-src icon:
+
+
+
+
+
+-- pr.sitemap-data sitemap:
+$processor$: pr.sitemap
+
 
 
 

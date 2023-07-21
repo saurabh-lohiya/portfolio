@@ -1,6 +1,6 @@
 -- import: saurabh-lohiya.github.io/portfolio/common
 -- import: saurabh-lohiya.github.io/portfolio/header as h
-
+-- import: fastn/processors as pr
 
 
 -- page:
@@ -117,6 +117,7 @@ width: fill-container
 -- h.header: Tony
 site-url: /
 menu-icon: $assets.files.assets.hamburger-menu.svg
+sections: $common.sitemap.sections
 
 -- ftd.column:
 width: fill-container
