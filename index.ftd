@@ -8,7 +8,7 @@
 -- hero: Tony Smith
 tag: Hello there...
 designation: I Am Passionate Developer!
-avatar: $assets.files.assets.me.jpeg
+avatar: $assets.files.assets.me.jpg
 cta-primary: My Work
 cta-primary-link: /
 cta-secondary: Hire Me
@@ -23,7 +23,7 @@ id: about-me
 
 -- about-me-portrait:
 socials: $common.socials
-src: $assets.files.assets.me.jpeg
+src: $assets.files.assets.me.jpg
 
 -- about-me-info: I'M Tony Smith
 tag: A Lead UX & UI designer based in Canada
@@ -281,6 +281,7 @@ border-color if { button-solid.cta-hover }: $inherited.colors.text-strong
 
 -- ftd.text: $button-solid.title
 color: $inherited.colors.text-strong
+color if { button-solid.cta-hover }: $inherited.colors.cta-primary.text
 role: $inherited.types.copy-regular
 
 -- end: ftd.row
@@ -316,6 +317,7 @@ border-color if { button-solid-sm.cta-hover }: $inherited.colors.text-strong
 
 -- ftd.text: $button-solid-sm.title
 color: $inherited.colors.text-strong
+color if { button-solid-sm.cta-hover }: $inherited.colors.cta-primary.text
 role: $inherited.types.label-large
 style: bold
 
@@ -578,7 +580,6 @@ string id:
 -- ftd.column:
 id: $latest-works.id
 width: fill-container
-background.solid: $inherited.colors.background.base
 align-content: center
 padding-vertical.px: 100
 padding-horizontal.px if { ftd.device == "mobile" }: 20
@@ -838,7 +839,6 @@ string id:
 -- ftd.column:
 id: $blogs.id
 width: fill-container
-background.solid: $inherited.colors.background.base
 align-content: center
 padding-vertical.px: 100
 padding-horizontal.px if { ftd.device == "mobile" }: 20
@@ -1404,7 +1404,6 @@ common.achievement list achievements:
 -- ftd.column:
 width: fill-container
 align-content: center
-background.solid: $inherited.colors.background.base
 padding-vertical.px: 100
 padding-horizontal.px if { ftd.device == "mobile" }: 20
 
