@@ -292,7 +292,7 @@ align-content: center
 border-right-width.px if { sub-section.active }: 1
 border-right-color: $common.primary
 border-bottom-width.px: 1
-border-bottom-color: $common.base-secondary
+border-bottom-color: $common.base-secondary 
 
 -- ftd.image:
 if: { sub-section.font-icon != NULL }
