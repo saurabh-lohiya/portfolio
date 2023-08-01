@@ -1,0 +1,380 @@
+-- import: saurabh-lohiya.github.io/portfolio/assets
+-- import: fastn/processors as pr
+
+-- ftd.color text-strong: #090a0c
+
+-- ftd.color text: #555a64
+
+-- ftd.color text-base: #ffffff
+
+-- ftd.color text-secondary: #dddddd
+
+-- ftd.color primary: #d9832e
+
+-- ftd.color base: #ffffff
+
+-- ftd.color base-secondary: #eaedf2
+
+-- ftd.color base-tertiary: #090a0c
+
+-- ftd.color overlay: #00000099
+
+-- integer max-width: 1140
+
+
+-- ftd.shadow shadow-light:
+color: #ddd
+x-offset.px: 0
+y-offset.px: 0
+blur.px: 8
+inset-body: false
+spread.px: 4
+
+
+
+
+-- ftd.shadow shadow-ex-light:
+color: #eee
+x-offset.px: 0
+y-offset.px: 0
+blur.px: 4
+inset-body: false
+spread.px: 2
+
+
+
+-- record overhaul:
+caption title:
+body body:
+ftd.image-src icon:
+
+
+
+-- record project:
+caption title:
+string sub-title:
+ftd.image-src src:
+
+
+
+
+
+-- record article:
+caption title:
+body body:
+string tag:
+string publishing-date:
+ftd.image-src src:
+
+
+
+
+
+-- record testimonial:
+caption title:
+body body:
+string designation:
+ftd.image-src src:
+
+
+
+
+
+-- record info:
+caption title:
+string tag:
+
+
+
+
+
+-- record social:
+ftd.image-src icon:
+string link:
+
+
+
+
+
+-- record sub-section:
+caption title:
+ftd.image-src icon:
+
+
+
+
+
+-- record language:
+caption title:
+
+
+
+
+
+-- record achievement:
+caption title:
+ftd.image-src icon:
+
+
+
+
+
+-- pr.sitemap-data sitemap:
+$processor$: pr.sitemap
+
+
+
+
+
+
+-- achievement list achievements:
+
+-- achievement: 80 Albums Listened
+icon: $assets.files.assets.album.png
+
+-- achievement: 80 Albums Listened
+icon: $assets.files.assets.album.png
+
+-- achievement: 80 Albums Listened
+icon: $assets.files.assets.album.png
+
+-- achievement: 80 Albums Listened
+icon: $assets.files.assets.album.png
+
+-- end: achievements
+
+
+
+
+
+-- sub-section list sub-sections:
+
+-- sub-section: HOME
+icon: $assets.files.assets.home.svg 
+
+-- sub-section: ABOUT ME
+icon: $assets.files.assets.info.svg
+
+-- sub-section: SERVICES
+icon: $assets.files.assets.service.png
+
+-- sub-section: PORTFOLIO
+icon: $assets.files.assets.portfolio.png
+
+-- sub-section: BLOG
+icon: $assets.files.assets.blog.png
+
+-- sub-section: CONTACT
+icon: $assets.files.assets.contact.png
+
+-- end: sub-sections
+
+
+
+
+
+-- language list languages:
+
+-- language: HTML5
+
+-- language: CSS3
+
+-- language: Javascript
+
+-- language: React
+
+-- language: Vue
+
+-- language: Django
+
+-- language: NodeJS
+
+-- language: UI/UX Designer
+
+-- language: PHP
+
+-- language: Angular
+
+-- language: MY-SQL
+
+-- end: languages
+
+
+
+
+-- social list socials:
+
+-- social:
+icon: $assets.files.assets.facebook.svg
+link: /
+
+-- social:
+icon: $assets.files.assets.twitter.svg
+link: /
+
+-- social:
+icon: $assets.files.assets.instagram.svg
+link: /
+
+-- social:
+icon: $assets.files.assets.li.svg
+link: /
+
+-- end: socials
+
+
+
+
+
+-- info list info-list:
+
+-- info: Birthday
+tag: 4th april 1991
+
+-- info: E-mail
+tag: info@domail.com
+
+-- info: Age
+tag: 22 Yr
+
+-- info: Phone
+tag: 880-9092-033
+
+-- info: Residence
+tag: Canara
+
+-- info: Skype
+tag: skype.0404
+
+-- info: Address
+tag: California
+
+-- info: Freelance
+tag: Available
+
+-- end: info-list
+
+
+
+
+
+-- overhaul list overhauls:
+
+-- overhaul: Unique Design
+icon: $assets.files.assets.monitor.png
+
+I design and develop services for customers of all sizes, specializing 
+in creating stylish, modern websites.
+
+-- overhaul: Unique Design
+icon: $assets.files.assets.tags.png
+
+I design and develop services for customers of all sizes, specializing 
+in creating stylish, modern websites.
+
+-- overhaul: Unique Design
+icon: $assets.files.assets.messages.svg
+
+I design and develop services for customers of all sizes, specializing 
+in creating stylish, modern websites.
+
+-- overhaul: Unique Design
+icon: $assets.files.assets.tablet.png
+
+I design and develop services for customers of all sizes, specializing 
+in creating stylish, modern websites.
+
+-- overhaul: Unique Design
+icon: $assets.files.assets.bullseye.png
+
+I design and develop services for customers of all sizes, specializing 
+in creating stylish, modern websites.
+
+-- overhaul: Unique Design
+icon: $assets.files.assets.settings.svg
+
+I design and develop services for customers of all sizes, specializing 
+in creating stylish, modern websites.
+
+-- end: overhauls
+
+
+
+
+
+-- project list projects:
+
+-- project: Our Photography
+sub-title: Design
+src: $assets.files.assets.leaves.jpeg
+
+-- project: Our Photography
+sub-title: Design
+src: $assets.files.assets.coffee.jpeg
+
+-- project: Our Photography
+sub-title: Design
+src: $assets.files.assets.bananas.jpeg
+
+-- project: Our Photography
+sub-title: Design
+src: $assets.files.assets.bb.jpeg
+
+-- project: Our Photography
+sub-title: Design
+src: $assets.files.assets.pineapple.jpeg
+
+-- project: Our Photography
+sub-title: Design
+src: $assets.files.assets.wooden-hand.jpeg
+
+-- end: projects
+
+
+
+
+-- article list articles:
+
+-- article: Make your Marketing website
+publishing-date: 02 Mar 2023
+tag: Design
+src: $assets.files.assets.blog-1.jpg
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+-- article: Make your Marketing website
+publishing-date: 02 Mar 2023
+tag: Design
+src: $assets.files.assets.blog-2.jpg
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+-- article: Make your Marketing website
+publishing-date: 02 Mar 2023
+tag: Design
+src: $assets.files.assets.blog-3.jpg
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+-- end: articles
+
+
+
+
+-- testimonial list testimonials:
+
+-- testimonial: Nancy Bayers
+designation: Co-Founder
+src: $assets.files.assets.testimonial-1.jpeg
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint 
+
+-- testimonial: Nancy Bayers
+designation: Co-Founder
+src: $assets.files.assets.testimonial-2.jpeg
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint
+
+-- end: testimonials
