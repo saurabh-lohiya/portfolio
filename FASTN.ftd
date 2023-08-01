@@ -15,14 +15,19 @@ favicon: /-/saurabh-lohiya.github.io/portfolio/favicon.ico
 -- fastn.sitemap:
 
 # Home: index.html
-font-icon: /assets/home.svg
+icon: /assets/home.svg
 
-;;# About Me: #about-me
-;;
-;;# Services: #services
-;;
-;;# Portfolio: #portfolio
-;;
-;;# Blog: #blog
-;;
-;;# Contact: #contact
+# About Me: /#about-me
+icon: /assets/info.svg
+
+# Services: /#services
+icon: /assets/service.png
+
+# Portfolio: /#latest-works
+icon: /assets/portfolio.png
+
+# Blog: /#blogs
+icon: /assets/blog.png
+
+# Contact: /#contact
+icon: /assets/contact.png

@@ -12,13 +12,11 @@ pr.toc-item list sections:
 pr.toc-item list toc:
 boolean $sidebar-open: false
 ftd.image-src menu-icon:
-
+ 
 -- ftd.column:
 sticky: true
 width if { ftd.device == "mobile" }: fill-container
-
-;;-- ftd.text: $obj.title
-;;$loop$: $header.sections as $obj
+z-index: 100
 
 -- ftd.mobile:
 
@@ -81,14 +79,14 @@ pr.toc-item list sections:
 -- ftd.column:
 height.fixed.vh: 100
 width.fixed.px: 95
-shadow: $common.shadow-light
+shadow: $inherited.colors.text-strong
 sticky: true
 
 -- ftd.text: $header-desktop.site-name
 role: $inherited.types.copy-regular
-color: $common.text-base
+color: $inherited.colors.text-strong
 link: $header-desktop.site-url
-background.solid: $common.primary
+background.solid: $inherited.colors.cta-primary.text
 width: fill-container
 padding-vertical.px: 12
 text-align: center
@@ -96,7 +94,9 @@ style: bold
 
 -- sub-section: $obj.title
 $loop$: $header-desktop.sections as $obj
-font-icon: $obj.font-icon
+icon: $obj.font-icon
+link: $obj.url
+active: $obj.is-active
 
 -- end: ftd.column
 
@@ -136,9 +136,9 @@ align-content: center
 
 -- ftd.text: $header-mobile.site-name
 role: $inherited.types.copy-regular
-color: $common.text-base
+color: $inherited.colors.text-strong
 link: $header-mobile.site-url
-background.solid: $common.primary
+background.solid: $inherited.colors.cta-primary.text
 padding.px: 12
 text-align: center
 style: bold
@@ -209,18 +209,16 @@ boolean $show-section: false
 width:fill-container
 anchor: window
 left.px: 0
-top.px: 100
+top.px: 80
 overflow-y: auto
 padding-vertical.px: 20
 padding-horizontal.px: 24
-background.solid: yellow
-z-index: 14
+background.solid: $inherited.colors.background.base
+z-index: 99
 
 -- ftd.column:
-;;if: { !ftd.is_empty(menu-mobile.sections) }
+if: { !ftd.is_empty(menu-mobile.sections) }
 width: fill-container
-background.solid: red
-padding-bottom.px: 24
 
 -- header-item-mobile: $obj.title
 $loop$: $menu-mobile.sections as $obj
@@ -248,7 +246,7 @@ $show-section: $menu-mobile.show-section
 caption title:
 optional string link:
 pr.toc-item list children:
-boolean is-active:
+boolean is-active: false
 boolean $show-section:
 boolean $open: false
 
@@ -262,10 +260,10 @@ $on-click-outside$: $ftd.set-bool($a = $header-item-mobile.open, v = false)
 role: $inherited.types.copy-regular
 link: $header-item-mobile.link
 width: fill-container
-color: $common.text
+color: $inherited.colors.text
 color if { header-item-mobile.is-active }: $inherited.colors.success.text
 $on-click$: $ftd.set-bool($a = $header-item-mobile.show-section, v = true)
-padding-top.px: 24
+padding-vertical.px: 12
 
 -- end: ftd.column
 
@@ -289,22 +287,23 @@ boolean $active: false
 width.fixed.px: 90
 height.fixed.px: 75
 align-content: center
-border-right-width.px if { sub-section.active }: 1
-border-right-color: $common.primary
+border-right-width.px if { sub-section.active }: 2
+border-right-color: $inherited.colors.cta-primary.text
 border-bottom-width.px: 1
-border-bottom-color: $common.base-secondary 
+border-bottom-color: $inherited.colors.background.base
 
 -- ftd.image:
-if: { sub-section.font-icon != NULL }
-src: $sub-section.font-icon
+if: { sub-section.icon != NULL }
+src: $sub-section.icon
 width.fixed.px: 24
 height.fixed.px: 24
 
 -- ftd.text: $sub-section.title
 role: $inherited.types.label-large
-color: $common.text-strong
-color if { sub-section.active }: $common.primary
+color: $inherited.colors.text-strong
+color if { sub-section.active }: $inherited.colors.cta-primary.text
 margin-top.px: 10
+link: $sub-section.link
 
 -- end: ftd.column
 
