@@ -282,7 +282,7 @@ padding-top.px: 24
 
 -- component sub-section:
 caption title:
-optional ftd.image-src font-icon: $assets.files.assets.portfolio.svg
+optional ftd.image-src font-icon: $assets.files.assets.portfolio.png
 boolean $active: false
 
 -- ftd.column:
