@@ -80,13 +80,14 @@ pr.toc-item list sections:
 height.fixed.vh: 100
 width.fixed.px: 95
 border-width.px: 1
+background.solid: $inherited.colors.background.step-2
 sticky: true
 
 -- ftd.text: $header-desktop.site-name
 role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
 link: $header-desktop.site-url
-background.solid: $inherited.colors.background.base
+background.solid: $inherited.colors.background.step-2
 border-bottom-width.px: 1
 border-color: $inherited.colors.border-strong
 width: fill-container
@@ -332,7 +333,6 @@ height.fixed.px: 24
 -- ftd.text: $sub-section.title
 role: $inherited.types.label-large
 color: $inherited.colors.text-strong
-color if { sub-section.active }: $inherited.colors.text
 margin-top.px: 10
 link: $sub-section.link
 
