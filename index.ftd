@@ -806,7 +806,6 @@ margin-top.px: 22
 
 -- ftd.text:
 role: $inherited.types.label-large
-role if { ftd.device == "mobile" }: $inherited.types.label-large
 color: $inherited.colors.text-strong
 margin-top.px: 12
 
@@ -1498,7 +1497,6 @@ align-self: center
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 max-width.fixed.px: 120
-max-width.fixed.px if { ftd.device == "mobile" }:  
 text-align if { ftd.device == "mobile" }: center
 style: bold 
 
