@@ -16,19 +16,19 @@ favicon: /-/saurabh-lohiya.github.io/portfolio/favicon.ico
 -- fastn.sitemap:
 
 # Home: index.html
-icon: /-/saurabh-lohiya.github.io/portfolio/assets/home.svg
+icon: assets/home.svg
 
 # About Me: /#about-me
-icon: /-/saurabh-lohiya.github.io/portfolio/assets/info.svg
+icon: assets/info.svg
 
 # Services: /#services
-icon:/-/saurabh-lohiya.github.io/portfolio/assets/service.png
+icon: assets/service.png
 
 # Portfolio: /#latest-works
-icon: /-/saurabh-lohiya.github.io/portfolio/assets/portfolio.png
+icon: assets/portfolio.png
 
 # Blog: /#blogs
-icon: /-/saurabh-lohiya.github.io/portfolio/assets/blog.png
+icon: assets/blog.png
 
 # Contact: /#contact
-icon: /-/saurabh-lohiya.github.io/portfolio/assets/contact.png
+icon: assets/contact.png
