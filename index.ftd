@@ -1,5 +1,6 @@
 -- import: saurabh-lohiya.github.io/portfolio/common
 -- import: saurabh-lohiya.github.io/portfolio/header as h
+-- import: fastn-community.github.io/dark-flame-cs as cs
 -- import: fastn/processors as pr
 
 
@@ -20,7 +21,7 @@ a user interface flow chart based on container proportion.
 -- about-me-container: ABOUT ME
 tag: A LEAD UX & UI DESIGNER BASED IN CANADA
 id: about-me
-
+ 
 -- about-me-portrait:
 socials: $common.socials
 src: $assets.files.assets.me.jpg
@@ -108,6 +109,7 @@ copyright: © 2023 copyright all right reserved
 
 -- component page:
 children child:
+ftd.color-scheme colors: $cs.main
 
 -- ftd.column:
 width: fill-container
@@ -175,15 +177,16 @@ string tag:
 body body:
 ftd.image-src avatar:
 string cta-primary:
-string cta-primary-link:
+string cta-primary-link: index.html
 string cta-secondary:
-string cta-secondary-link:
+string cta-secondary-link: index.html
 
 -- ftd.row:
 width: fill-container
 align-content: center
 height.fixed.vh: 100
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+background.solid: $inherited.colors.background.base
 
 -- ftd.row:
 width: fill-container
@@ -226,7 +229,7 @@ margin-top.px: 10
 -- button-solid: $hero.cta-primary
 cta-link: $hero.cta-primary-link
 
--- button-hallow: $hero.cta-secondary
+-- button-solid: $hero.cta-secondary
 cta-link: $hero.cta-secondary-link
 
 -- end: ftd.row
@@ -263,25 +266,23 @@ src: $hero.avatar
 
 -- component button-solid:
 caption title:
-string cta-link:
+string cta-link: index.html
 boolean $cta-hover: false
 
 -- ftd.row:
 padding-vertical.px: 8
 padding-horizontal.px: 20
-background.solid: $inherited.colors.cta-primary.text
-background.solid if { button-solid.cta-hover }: $inherited.colors.text-strong
+background.solid: $inherited.colors.background.base
+background.solid if { button-solid.cta-hover }: $inherited.colors.background.step-2
 align-content: center
 $on-mouse-enter$: $ftd.set-bool($a = $button-solid.cta-hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button-solid.cta-hover, v = false)
 link: $button-solid.cta-link
 border-width.px: 2
-border-color: $inherited.colors.cta-primary.text
-border-color if { button-solid.cta-hover }: $inherited.colors.text-strong
+border-color: $inherited.colors.border
 
 -- ftd.text: $button-solid.title
 color: $inherited.colors.text-strong
-color if { button-solid.cta-hover }: $inherited.colors.cta-primary.text
 role: $inherited.types.copy-regular
 
 -- end: ftd.row
@@ -299,25 +300,23 @@ role: $inherited.types.copy-regular
 
 -- component button-solid-sm:
 caption title:
-string cta-link:
+string cta-link: index.html
 boolean $cta-hover: false
 
 -- ftd.row:
 padding-vertical.px: 6
 padding-horizontal.px: 14
-background.solid: $inherited.colors.cta-primary.text
-background.solid if { button-solid-sm.cta-hover }: $inherited.colors.text-strong
+background.solid: $inherited.colors.background.base
+background.solid if { button-solid-sm.cta-hover }: $inherited.colors.background.step-2
 align-content: center
 $on-mouse-enter$: $ftd.set-bool($a = $button-solid-sm.cta-hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button-solid-sm.cta-hover, v = false)
 link: $button-solid-sm.cta-link
 border-width.px: 2
-border-color: $inherited.colors.cta-primary.text
-border-color if { button-solid-sm.cta-hover }: $inherited.colors.text-strong
+border-color: $inherited.colors.border
 
 -- ftd.text: $button-solid-sm.title
 color: $inherited.colors.text-strong
-color if { button-solid-sm.cta-hover }: $inherited.colors.cta-primary.text
 role: $inherited.types.label-large
 style: bold
 
@@ -381,11 +380,11 @@ string id:
 
 -- ftd.column:
 id: $contact-form.id
-background.solid: $inherited.colors.background.base
 width: fill-container
 align-content: center
 padding-vertical.px: 100
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+background.solid: $inherited.colors.background.step-2
 
 -- ftd.column:
 width: fill-container
@@ -399,7 +398,7 @@ style: bold
 -- ftd.column:
 width.fixed.px: 100
 height.fixed.px: 2
-background.solid: $inherited.colors.cta-primary.text
+background.solid: $inherited.colors.border
 margin-top.px: 10
 margin-top.px if { ftd.device == "mobile" }: 15
 
@@ -423,12 +422,12 @@ wrap: true
 padding.px: 36
 spacing.fixed.px: 24
 background.solid: $inherited.colors.background.base
-shadow: $common.shadow-light
+border-width.px: 1
 border-radius.px: 5
 
 -- ftd.text: $contact-form.sub-title
 role: $inherited.types.heading-tiny
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.text
 style: bold
 
 -- ftd.row:
@@ -477,12 +476,8 @@ spacing.fixed.px: 32
 width: fill-container
 margin-top.px: 16
 
--- ftd.text: Write your message here...
-role: $inherited.types.copy-small
-color: $inherited.colors.cta-secondary.text
-margin-bottom.px: 4
-
 -- ftd.text-input:
+placeholder: Write Your Message Here...
 padding-vertical.px: 4
 padding-horizontal.px: 8
 width: fill-container
@@ -491,6 +486,7 @@ role: $inherited.types.copy-small
 border-bottom-width.px: 1
 border-color: $inherited.colors.text
 color: $inherited.colors.border
+multiline: true
 
 -- end: ftd.column
 
@@ -530,14 +526,14 @@ ftd.image-src icon:
 
 -- ftd.row:
 spacing.fixed.px: 16
-background.solid: $inherited.colors.background.base
 max-width.fixed.px: 350
 padding.px: 20
-shadow: $common.shadow-light
+border-width.px: 1
+background.solid: $inherited.colors.background.base
 
 -- ftd.image:
-background.solid: $inherited.colors.cta-primary.text
-color: $inherited.colors.background.base
+background.solid: $inherited.colors.background.step-2
+color: $inherited.colors.border
 src: $contact-info.icon
 width.fixed.px: 40
 height.fixed.px: 40
@@ -583,6 +579,7 @@ width: fill-container
 align-content: center
 padding-vertical.px: 100
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+background.solid: $inherited.colors.background.base
 
 -- ftd.column:
 width: fill-container
@@ -596,7 +593,7 @@ style: bold
 -- ftd.column:
 width.fixed.px: 100
 height.fixed.px: 2
-background.solid: $inherited.colors.cta-primary.text
+background.solid: $inherited.colors.border
 margin-top.px: 10
 margin-top.px if { ftd.device == "mobile" }: 15
 
@@ -679,12 +676,12 @@ align-content: center
 
 -- ftd.text: $portfolio-box.title
 role: $inherited.types.heading-small
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 style: bold
 
 -- ftd.text: $portfolio-box.sub-title
 role: $inherited.types.heading-tiny
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 style: bold
 
 -- end: ftd.column
@@ -711,7 +708,7 @@ string id:
 -- ftd.column:
 id: $services.id
 width: fill-container
-background.solid: $inherited.colors.background.base
+background.solid: $inherited.colors.background.step-1
 align-content: center
 padding-vertical.px: 100
 padding-horizontal.px if { ftd.device == "mobile" }: 20
@@ -729,7 +726,7 @@ style: bold
 -- ftd.column:
 width.fixed.px: 100
 height.fixed.px: 2
-background.solid: $inherited.colors.cta-primary.text
+background.solid: $inherited.colors.border
 margin-top.px: 10
 margin-top.px if { ftd.device == "mobile" }: 20
 
@@ -785,9 +782,8 @@ $on-mouse-leave$: $ftd.set-bool($a = $service.hover, v = false)
 width.fixed.px: 348
 padding-vertical.px: 40
 padding-horizontal.px: 30
-background.solid: $inherited.colors.background.base
-background.solid if { service.hover }: $inherited.colors.cta-primary.text
-shadow: $common.shadow-light
+background.solid: $inherited.colors.background.step-2
+border-width.px: 1
 border-radius.px: 5
 
 -- ftd.image:
@@ -811,8 +807,7 @@ margin-top.px: 22
 -- ftd.text:
 role: $inherited.types.label-large
 role if { ftd.device == "mobile" }: $inherited.types.label-large
-color: $inherited.colors.text
-color if { service.hover }: $inherited.colors.text-strong
+color: $inherited.colors.text-strong
 margin-top.px: 12
 
 $service.body
@@ -842,6 +837,7 @@ width: fill-container
 align-content: center
 padding-vertical.px: 100
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+background.solid: $inherited.colors.background.base
 
 -- ftd.column:
 width: fill-container
@@ -855,7 +851,7 @@ style: bold
 -- ftd.column:
 width.fixed.px: 100
 height.fixed.px: 2
-background.solid: $inherited.colors.cta-primary.text
+background.solid: $inherited.colors.border
 margin-top.px: 10
 
 -- end: ftd.column
@@ -916,14 +912,14 @@ background.solid: $inherited.colors.background.base
 -- ftd.column:
 background.solid: $inherited.colors.background.base
 padding.px: 18
-shadow: $common.shadow-ex-light
+border-width.px: 1
+border-color: $inherited.colors.border
 z-index: 2
 
 -- ftd.text: $blog.tag
 role: $inherited.types.label-small
 color: $inherited.colors.text-strong
 border-width.px: 1
-border-color: $inherited.colors.text
 border-radius.px: 2
 padding.px: 5
 padding-horizontal.px: 10
@@ -943,12 +939,10 @@ $blog.body
 
 -- ftd.text: Read More
 role: $inherited.types.label-large
-color: $inherited.colors.cta-primary.text
-color if { blog.cta-hover }: $inherited.colors.text-strong
+color: $inherited.colors.text-strong
 margin-top.px: 16
 border-bottom-width.px: 2
-border-color: $inherited.colors.cta-primary.text
-border-color if { blog.cta-hover }: $inherited.colors.text-strong
+border-color: $inherited.colors.border
 
 -- end: ftd.column
 
@@ -956,7 +950,7 @@ border-color if { blog.cta-hover }: $inherited.colors.text-strong
 z-index: 2
 role: $inherited.types.label-small
 color: $inherited.colors.text-strong
-background.solid: $inherited.colors.cta-primary.text
+background.solid: $inherited.colors.background.step-2
 anchor: parent
 top.px: -25
 left.px: 0
@@ -991,10 +985,10 @@ $common.testimonial list testimonials:
 
 -- ftd.column:
 width: fill-container
-background.solid: $inherited.colors.background.base
 align-content: center
 padding-vertical.px: 100
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+background.solid: $inherited.colors.background.step-2
 
 -- ftd.column:
 width: fill-container
@@ -1008,7 +1002,7 @@ style: bold
 -- ftd.column:
 width.fixed.px: 100
 height.fixed.px: 2
-background.solid: $inherited.colors.cta-primary.text
+background.solid: $inherited.colors.border
 margin-top.px: 10
 
 -- end: ftd.column
@@ -1116,7 +1110,7 @@ id: $about-me-container.id
 width: fill-container
 align-content: center
 padding-vertical.px: 100
-background.solid: $inherited.colors.background.base
+background.solid: $inherited.colors.background.step-2
 
 -- ftd.column:
 width: fill-container
@@ -1132,7 +1126,7 @@ style: bold
 -- ftd.column:
 width.fixed.px: 100
 height.fixed.px: 2
-background.solid: $inherited.colors.cta-primary.text
+background.solid: $inherited.colors.border
 margin-top.px: 10
 margin-top.px if { ftd.device == "mobile" }: 20
 
@@ -1186,7 +1180,7 @@ height: fill-container
 background.solid: $inherited.colors.background.base
 padding.px: 14
 border-radius.px: 5
-shadow: $common.shadow-light
+border-width.px: 1
 
 -- ftd.image:
 src: $about-me-portrait.src
@@ -1226,15 +1220,11 @@ link: $obj.link
 
 
 -- component social-icon:
-boolean $hover: false
 ftd.image-src icon:
 string link:
 
 -- ftd.column:
-background.solid: $inherited.colors.cta-primary.text
-background.solid if { social-icon.hover }: $inherited.colors.text-strong
-$on-mouse-enter$: $ftd.set-bool($a = $social-icon.hover, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $social-icon.hover, v = false)
+background.solid: $inherited.colors.background.step-2
 padding.px: 8
 
 -- ftd.image:
@@ -1364,11 +1354,13 @@ padding-horizontal.px if { ftd.device == "mobile" }: 26
 width: fill-container
 max-width.fixed.px: $common.max-width
 spacing: space-between
+
 -- ftd.row:
 spacing.fixed.px: 18
 
 -- ftd.image:
 $loop$: $footer.socials as $obj
+background.solid: $inherited.colors.background.step-2
 width.fixed.px: 18
 height.fixed.px: 18
 src: $obj.icon
@@ -1406,6 +1398,7 @@ width: fill-container
 align-content: center
 padding-vertical.px: 100
 padding-horizontal.px if { ftd.device == "mobile" }: 20
+background.solid: $inherited.colors.background.base
 
 -- ftd.column:
 width: fill-container
@@ -1419,7 +1412,7 @@ style: bold
 -- ftd.column:
 width.fixed.px: 100
 height.fixed.px: 2
-background.solid: $inherited.colors.cta-primary.text
+background.solid: $inherited.colors.border-strong
 margin-top.px: 10
 margin-top.px if { ftd.device == "mobile" }: 20
 
@@ -1444,9 +1437,9 @@ width if { ftd.device == "mobile" }: fill-container
 spacing.fixed.px: 18
 wrap: true
 
--- button-hallow: $obj.title
+-- button-solid: $obj.title
 $loop$: $skills.languages as $obj
-cta-link: /
+cta-link: index.html
 
 -- end: ftd.row
 
@@ -1488,13 +1481,13 @@ ftd.image-src icon:
 padding-vertical.px: 20
 padding-horizontal.px: 12
 border-radius.px: 5
-border-color: $inherited.colors.cta-primary.text
+border-color: $inherited.colors.border
 border-width.px: 2
+background.solid: $inherited.colors.background.step-2
 spacing.fixed.px: 10
 width.fixed.px: 220
 width.fixed.px if { ftd.device == "mobile" }: 160
 align-content: center
-shadow: $common.shadow-ex-light
 wrap: true
 
 -- ftd.image: 
@@ -1503,7 +1496,7 @@ align-self: center
 
 -- ftd.text: $achievement-card.title
 role: $inherited.types.copy-regular
-color: $inherited.colors.cta-primary.text
+color: $inherited.colors.text
 max-width.fixed.px: 120
 max-width.fixed.px if { ftd.device == "mobile" }:  
 text-align if { ftd.device == "mobile" }: center
