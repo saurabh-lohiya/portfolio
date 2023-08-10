@@ -6,14 +6,14 @@
 
 -- page:
 
--- hero: Tony Smith
+-- hero: John Doe
 tag: Hello there...
 designation: I Am Passionate Developer!
 avatar: $assets.files.assets.me.jpg
 cta-primary: My Work
-cta-primary-link: /
+cta-primary-link: index.html
 cta-secondary: Hire Me
-cta-secondary-link: /
+cta-secondary-link: index.html
 
 The namics of how users interact with interactive elements within 
 a user interface flow chart based on container proportion.

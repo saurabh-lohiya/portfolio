@@ -1,0 +1,111 @@
+-- $site-doc.copyright-info: Copyright © 2023
+
+-- site-doc.doc-home: hero
+github-url: https://github.com/saurabh-lohiya/portfolio
+site-title: hero
+
+-- site-doc.component-doc: `ds.hero`
+package-link: https://saurabh-lohiya.github.io/portfolio
+github-link: https://github.com/saurabh-lohiya/portfolio
+package-name: saurabh-lohiya.github.io/portfolio
+info: `-- ds.hero` can be used as a hero component.
+
+`-- ds.hero` contains, a image to the right side and information to the
+left side of it. If you want to use it then use below given example code 
+and add it inside a `.ftd` file.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- ds.hero: John Doe
+tag: Hello there...
+designation: I Am Passionate Developer!
+avatar: $assets.files.assets.me.jpg
+cta-primary: My Work
+cta-primary-link: index.html
+cta-secondary: Hire Me
+cta-secondary-link: index.html
+
+We are an award-winning strategic design company that provides 
+consultancy services and help you create outstanding digital products.
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- ds.hero: John Doe
+tag: Hello there...
+designation: I Am Passionate Developer!
+avatar: $assets.files.assets.me.jpg
+cta-primary: My Work
+cta-primary-link: index.html
+cta-secondary: Hire Me
+cta-secondary-link: index.html
+
+We are an award-winning strategic design company that provides 
+consultancy services and help you create outstanding digital products.
+
+-- end: site-doc.output
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- ds.hero` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+This is a default property of the `hero` component. It's used to add a
+title to `hero` component.
+
+-- site-doc.component-property: `body`
+type: Caption (`required`)
+
+This is a default property of the `hero` component. It's used to add a
+body to `hero` component.
+
+-- site-doc.component-property: `tag`
+type: Caption (`required`)
+
+This is a default property of the `hero` component. It's used to add a
+tag to `hero` component.
+
+-- site-doc.component-property: `designation`
+type: Caption (`required`)
+
+This is a default property of the `hero` component. It's used to add a
+designation of author to `hero` component.
+
+-- site-doc.component-property: `avatar`
+type: ftd.image-src (`required`)
+
+This is a default property of the `hero` component. Using `avatar`
+attribute image can be added.
+
+-- site-doc.component-property: `cta-primary`
+type: String (`required`)
+
+This is a default property of the `hero` component. It's used to add a
+click to action button title.
+
+-- site-doc.component-property: `cta-primary-link`
+type: String (`optional`)
+
+This is a default property of the `hero` component. It's used to add a
+link to click to action button.
+
+-- site-doc.component-property: `cta-secondary`
+type: String (`required`)
+
+This is a default property of the `hero` component. It's used to add a
+click to action button title.
+
+-- site-doc.component-property: `cta-secondary-link`
+type: String (`optional`)
+
+This is a default property of the `hero` component. It's used to add a
+link to click to action button.
+
+-- end: site-doc.doc-home
