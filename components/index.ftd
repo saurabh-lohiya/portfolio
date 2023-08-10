@@ -1,0 +1,43 @@
+-- boolean $show-modal: false
+
+
+
+
+-- site-doc.doc-home: Hero
+current-package: saurabh-lohiya.github.io/portfolio
+show-tabs: false
+site-title: Feature Component
+github-url: https://github.com/saurabh-lohiya.github.io/portfolio
+
+-- site-doc.output:
+colors: $ftd.default-colors
+
+-- ds.hero: John Doe
+tag: Hello there...
+designation: I Am Passionate Developer!
+avatar: $assets.files.assets.me.jpg
+cta-primary: My Work
+cta-primary-link: index.html
+cta-secondary: Hire Me
+cta-secondary-link: index.html
+
+We are an award-winning strategic design company that provides 
+consultancy services and help you create outstanding digital products.
+
+-- site-doc.header: What is a Hero component ?
+
+Hero components refer to a component where you can add all types of featured that you provide.
+
+-- site-doc.header: How to use Hero ?
+
+To use Hero components on your [fastn](https://fastn.com/) web project, add below into `FASTN.ftd`
+file:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: saurabh-lohiya.github.io/portfolio
+
+-- end: site-doc.output
+
+-- end: site-doc.doc-home

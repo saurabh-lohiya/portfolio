@@ -1,0 +1,62 @@
+-- $site-doc.copyright-info: Copyright © 2023
+
+-- site-doc.doc-home: services
+github-url: https://github.com/saurabh-lohiya/portfolio
+site-title: services
+
+-- site-doc.component-doc: `ds.services`
+package-link: https://saurabh-lohiya.github.io/portfolio
+github-link: https://github.com/saurabh-lohiya/portfolio
+package-name: saurabh-lohiya.github.io/portfolio
+info: `-- ds.services` can be used as a services component.
+
+`-- ds.services` this section is used for adding list of services
+that the proprietor offers.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- ds.services: MY SERVICES
+overhauls: $common.overhauls
+id: service
+
+A LEAD UX & UI DESIGNER BASED IN CANADA
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- ds.services: MY SERVICES
+overhauls: $common.overhauls
+id: service
+
+A LEAD UX & UI DESIGNER BASED IN CANADA
+
+-- end: site-doc.output
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- ds.services` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+This is a default property of the `services` component. It's used to add a
+title to `services` component.
+
+-- site-doc.component-property: `body`
+type: body (`required`)
+
+This is a default property of the `services` component. It's used to add a
+body to `services` component.
+
+-- site-doc.component-property: `overhauls`
+type: list (`required`)
+
+This is a default property of the `services` component. It's used to add a
+list of services that the proprietor wants to add in `services` section.
+
+-- end: site-doc.doc-home

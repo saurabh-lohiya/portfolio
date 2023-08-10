@@ -73,22 +73,19 @@ A LEAD UX & UI DESIGNER BASED IN CANADA
 -- contact-form: GET IN TOUCH
 sub-title: SAY SOMETHING
 cta-text: SEND MESSAGE
-link: /
+link: index.html
 id: contact
 
 A LEAD UX & UI DESIGNER BASED IN CANADA
 
 -- contact-info: Our Address
 info: 123 Stree New York City , United States Of America 750065.
-icon: $assets.files.assets.location.svg
 
 -- contact-info: Our Address
 info: 123 Stree New York City , United States Of America 750065.
-icon: $assets.files.assets.location.svg
 
 -- contact-info: Our Address
 info: 123 Stree New York City , United States Of America 750065.
-icon: $assets.files.assets.location.svg
 
 -- end: contact-form
 
@@ -373,10 +370,10 @@ caption title:
 string sub-title:
 body body:
 string cta-text:
-string link:
+string link: index.html
 boolean $is-active: false
 children child:
-string id:
+string id: contact
 
 -- ftd.column:
 id: $contact-form.id
@@ -522,7 +519,7 @@ align-self: center
 -- component contact-info:
 caption title:
 string info:
-ftd.image-src icon:
+ftd.image-src icon: $assets.files.assets.location.svg
 
 -- ftd.row:
 spacing.fixed.px: 16
@@ -703,7 +700,7 @@ style: bold
 caption title:
 body body:
 $common.overhaul list overhauls:
-string id:
+string id: services
 
 -- ftd.column:
 id: $services.id

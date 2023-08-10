@@ -1,0 +1,62 @@
+-- $site-doc.copyright-info: Copyright © 2023
+
+-- site-doc.doc-home: blogs
+github-url: https://github.com/saurabh-lohiya/portfolio
+site-title: blogs
+
+-- site-doc.component-doc: `ds.blogs`
+package-link: https://saurabh-lohiya.github.io/portfolio
+github-link: https://github.com/saurabh-lohiya/portfolio
+package-name: saurabh-lohiya.github.io/portfolio
+info: `-- ds.blogs` can be used as a blogs component.
+
+`-- ds.blogs` this section is used for adding list of articles
+that the proprietor has published.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- ds.blogs: MY blogs
+articles: $common.articles
+id: blog
+
+A LEAD UX & UI DESIGNER BASED IN CANADA
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- ds.blogs: MY blogs
+articles: $common.articles
+id: blog
+
+A LEAD UX & UI DESIGNER BASED IN CANADA
+
+-- end: site-doc.output
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- ds.blogs` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+This is a default property of the `blogs` component. It's used to add a
+title to `blogs` component.
+
+-- site-doc.component-property: `body`
+type: body (`required`)
+
+This is a default property of the `blogs` component. It's used to add a
+body to `blogs` component.
+
+-- site-doc.component-property: `articles`
+type: list (`required`)
+
+This is a default property of the `blogs` component. It's used to add a
+list of blogs that the proprietor wants to add in `blogs` section.
+
+-- end: site-doc.doc-home
