@@ -13,6 +13,16 @@ info: `-- ds.latest-works` can be used as a latest-works component.
 `-- ds.latest-works` this section is used for adding list of projects
 that the proprietor has worked upon.
 
+-- site-doc.output:
+
+-- ds.latest-works: MY latest-works
+projects: $common.projects
+id: work
+
+A LEAD UX & UI DESIGNER BASED IN CANADA
+
+-- end: site-doc.output
+
 -- site-doc.header: Invocation:
 
 -- cb.code:
@@ -26,16 +36,6 @@ id: work
 A LEAD UX & UI DESIGNER BASED IN CANADA
 
 -- site-doc.header: Demo:
-
--- site-doc.output:
-
--- ds.latest-works: MY latest-works
-projects: $common.projects
-id: work
-
-A LEAD UX & UI DESIGNER BASED IN CANADA
-
--- end: site-doc.output
 
 -- site-doc.header: Properties:
 
