@@ -1,0 +1,111 @@
+-- $site-doc.copyright-info: Copyright © 2023
+
+-- site-doc.doc-home: contact-form
+github-url: https://github.com/saurabh-lohiya/portfolio
+site-title: contact-form
+
+-- site-doc.component-doc: `ds.contact-form`
+package-link: https://saurabh-lohiya.github.io/portfolio
+github-link: https://github.com/saurabh-lohiya/portfolio
+package-name: saurabh-lohiya.github.io/portfolio
+info: `-- ds.contact-form` can be used as a contact-form component.
+
+`-- ds.contact-form` Here site visitors can add their contact details
+like name, email address and subject for proprietor to reach out to them.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- ds.contact-form: GET IN TOUCH
+sub-title: SAY SOMETHING
+cta-text: SEND MESSAGE
+link: index.html
+
+A LEAD UX & UI DESIGNER BASED IN CANADA
+
+\-- contact-info: Our Address
+info: 123 Stree New York City , United States Of America 750065.
+
+\-- contact-info: Our Address
+info: 123 Stree New York City , United States Of America 750065.
+
+\-- contact-info: Our Address
+info: 123 Stree New York City , United States Of America 750065.
+
+\-- end: ds.contact-form
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- ds.contact-form: GET IN TOUCH
+sub-title: SAY SOMETHING
+cta-text: SEND MESSAGE
+link: index.html
+id: contac
+
+A LEAD UX & UI DESIGNER BASED IN CANADA
+
+-- ds.contact-info: Our Address
+info: 123 Stree New York City , United States Of America 750065.
+
+-- ds.contact-info: Our Address
+info: 123 Stree New York City , United States Of America 750065.
+
+-- ds.contact-info: Our Address
+info: 123 Stree New York City , United States Of America 750065.
+
+-- end: ds.contact-form
+
+-- end: site-doc.output
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- ds.contact-form` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+This is a default property of the `contact-form` component. It's used to add a
+title to `contact-form` component.
+
+-- site-doc.component-property: `body`
+type: Body (`required`)
+
+This is a default property of the `contact-form` component. It's used to add a
+body to `contact-form` component.
+
+-- site-doc.component-property: `sub-title`
+type: String (`required`)
+
+This is a default property of the `contact-form` component. It's used to add a
+sub-title to `contact-form` component.
+
+-- site-doc.component-property: `$is-active`
+type: Boolean (`optional`)
+
+This is a default property of the `contact-form` component. It's used to add a
+set `$is-active` to `contact-form` component.
+
+-- site-doc.component-property: `cta-text`
+type: String (`required`)
+
+This is a default property of the `contact-form` component. It's used to add a
+cta-text to button in `contact-form` component.
+
+-- site-doc.component-property: `link`
+type: String (`optional`)
+
+This is a default property of the `contact-form` component. It's used to add a
+link to button in `contact-form` component.
+
+-- site-doc.component-property: `children`
+type: children(`required`)
+
+This is a default property of the `contact-form` component. It's used to add
+children to `contact-form` component.
+
+-- end: site-doc.doc-home
