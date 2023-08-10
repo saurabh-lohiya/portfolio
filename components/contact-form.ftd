@@ -13,30 +13,6 @@ info: `-- ds.contact-form` can be used as a contact-form component.
 `-- ds.contact-form` Here site visitors can add their contact details
 like name, email address and subject for proprietor to reach out to them.
 
--- site-doc.header: Invocation:
-
--- cb.code:
-lang: ftd
-max-height.fixed.px: 350
-
-\-- ds.contact-form: GET IN TOUCH
-sub-title: SAY SOMETHING
-cta-text: SEND MESSAGE
-link: index.html
-
-A LEAD UX & UI DESIGNER BASED IN CANADA
-
-\-- contact-info: Our Address
-info: 123 Stree New York City , United States Of America 750065.
-
-\-- contact-info: Our Address
-info: 123 Stree New York City , United States Of America 750065.
-
-\-- contact-info: Our Address
-info: 123 Stree New York City , United States Of America 750065.
-
-\-- end: ds.contact-form
-
 -- site-doc.header: Demo:
 
 -- site-doc.output:
@@ -61,6 +37,30 @@ info: 123 Stree New York City , United States Of America 750065.
 -- end: ds.contact-form
 
 -- end: site-doc.output
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- ds.contact-form: GET IN TOUCH
+sub-title: SAY SOMETHING
+cta-text: SEND MESSAGE
+link: index.html
+
+A LEAD UX & UI DESIGNER BASED IN CANADA
+
+\-- contact-info: Our Address
+info: 123 Stree New York City , United States Of America 750065.
+
+\-- contact-info: Our Address
+info: 123 Stree New York City , United States Of America 750065.
+
+\-- contact-info: Our Address
+info: 123 Stree New York City , United States Of America 750065.
+
+\-- end: ds.contact-form
 
 -- site-doc.header: Properties:
 

@@ -14,15 +14,6 @@ info: `-- ds.contact-info` can be used as a contact-info component.
 proprietor that the site visitors can use as POC. Here proprietor
 can add info like Email Address, phone number or Location.
 
--- site-doc.header: Invocation:
-
--- cb.code:
-lang: ftd
-max-height.fixed.px: 350
-
-\-- ds.contact-info: Our Address
-info: 123 Stree New York City , United States Of America 750065.
-
 -- site-doc.header: Demo:
 
 -- site-doc.output:
@@ -31,6 +22,15 @@ info: 123 Stree New York City , United States Of America 750065.
 info: 123 Stree New York City , United States Of America 750065.
 
 -- end: site-doc.output
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- ds.contact-info: Our Address
+info: 123 Stree New York City , United States Of America 750065.
 
 -- site-doc.header: Properties:
 

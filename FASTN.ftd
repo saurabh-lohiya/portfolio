@@ -37,7 +37,7 @@ icon: assets/blog.png
 # Contact: /#contact
 icon: assets/contact.png
 
-# Doc: components/
+# Docs: components/
 
 - Hero: /components/hero/
 - Skills: /components/skills/

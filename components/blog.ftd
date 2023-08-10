@@ -1,0 +1,77 @@
+-- $site-doc.copyright-info: Copyright © 2023
+
+-- site-doc.doc-home: blog
+github-url: https://github.com/saurabh-lohiya/portfolio
+site-title: blog
+
+-- site-doc.component-doc: `ds.blog`
+package-link: https://saurabh-lohiya.github.io/portfolio
+github-link: https://github.com/saurabh-lohiya/portfolio
+package-name: saurabh-lohiya.github.io/portfolio
+info: `-- ds.blog` can be used as a blog component.
+
+`-- ds.blog` is used for adding contact information about 
+proprietor that the site visitors can use as POC. Here proprietor
+can add info like Email Address, phone number or Location.
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- ds.blog: Lorem ipsum
+publishing-date: 12th March 2016
+tag: Science
+src: $assets.files.assets.blog-1.jpg
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+-- end: site-doc.output
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- ds.blog: Lorem ipsum
+publishing-date: 12th March 2016
+tag: Science
+src: $assets.files.assets.blog-1.jpg
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- ds.blog` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+This is a default property of the `blog` component. It's used to add a
+title to `blog` component.
+
+-- site-doc.component-property: `body`
+type: Body (`required`)
+
+This is a default property of the `blog` component. It's used to add a
+body to `blog` component.
+
+-- site-doc.component-property: `tag`
+type: Caption (`required`)
+
+This is a default property of the `blog` component. It's used to add a
+tag to the `blog`.
+
+-- site-doc.component-property: `publishing-date`
+type: Caption (`required`)
+
+This is a default property of the `blog` component. It's used to add a
+publishing-date of the `blog`.
+
+-- site-doc.component-property: `src`
+type: ftd.image-src (`required`)
+
+This is a default property of the `blog` component. Using `src`
+attribute cover image can be added.
+
+-- end: site-doc.doc-home
