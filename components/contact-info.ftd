@@ -1,0 +1,57 @@
+-- $site-doc.copyright-info: Copyright © 2023
+
+-- site-doc.doc-home: contact-info
+github-url: https://github.com/saurabh-lohiya/portfolio
+site-title: contact-info
+
+-- site-doc.component-doc: `ds.contact-info`
+package-link: https://saurabh-lohiya.github.io/portfolio
+github-link: https://github.com/saurabh-lohiya/portfolio
+package-name: saurabh-lohiya.github.io/portfolio
+info: `-- ds.contact-info` can be used as a contact-info component.
+
+`-- ds.contact-info` is used for adding contact information about 
+proprietor that the site visitors can use as POC. Here proprietor
+can add info like Email Address, phone number or Location.
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- ds.contact-info: Our Address
+info: 123 Stree New York City , United States Of America 750065.
+
+-- site-doc.header: Demo:
+
+-- site-doc.output:
+
+-- ds.contact-info: Our Address
+info: 123 Stree New York City , United States Of America 750065.
+
+-- end: site-doc.output
+
+-- site-doc.header: Properties:
+
+Below are details of all properties of `-- ds.contact-info` component.
+
+-- site-doc.component-property: `title`
+type: Caption (`required`)
+
+This is a default property of the `contact-info` component. It's used to add a
+title to `contact-info` component.
+
+-- site-doc.component-property: `info`
+type: Caption (`required`)
+
+This is a default property of the `contact-info` component. It's used to add a
+info of contact details to `contact-info` component.
+
+-- site-doc.component-property: `icon`
+type: ftd.image-src (`optional`)
+
+This is a default property of the `contact-info` component. Using `icon`
+attribute image can be added.
+
+-- end: site-doc.doc-home

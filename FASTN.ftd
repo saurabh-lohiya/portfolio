@@ -36,3 +36,13 @@ icon: assets/blog.png
 
 # Contact: /#contact
 icon: assets/contact.png
+
+# Doc: components/
+
+- Hero: /components/hero/
+- Skills: /components/skills/
+- Latest Works: /components/latest-works/
+- Services: /components/services/
+- Contact Form: /components/contact-form/
+- Contact Info: /components/contact-info/
+- Blogs: /components/blogs/
