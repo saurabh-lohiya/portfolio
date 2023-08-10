@@ -7,7 +7,7 @@
 current-package: saurabh-lohiya.github.io/portfolio
 show-tabs: false
 site-title: Feature Component
-github-url: https://github.com/saurabh-lohiya.github.io/portfolio
+github-url: https://github.com/saurabh-lohiya/portfolio
 
 -- site-doc.output:
 colors: $ftd.default-colors

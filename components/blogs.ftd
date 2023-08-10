@@ -13,18 +13,6 @@ info: `-- ds.blogs` can be used as a blogs component.
 `-- ds.blogs` this section is used for adding list of articles
 that the proprietor has published.
 
--- site-doc.header: Invocation:
-
--- cb.code:
-lang: ftd
-max-height.fixed.px: 350
-
-\-- ds.blogs: MY blogs
-articles: $common.articles
-id: blog
-
-A LEAD UX & UI DESIGNER BASED IN CANADA
-
 -- site-doc.header: Demo:
 
 -- site-doc.output:
@@ -36,6 +24,18 @@ id: blog
 A LEAD UX & UI DESIGNER BASED IN CANADA
 
 -- end: site-doc.output
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- ds.blogs: MY blogs
+articles: $common.articles
+id: blog
+
+A LEAD UX & UI DESIGNER BASED IN CANADA
 
 -- site-doc.header: Properties:
 

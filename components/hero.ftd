@@ -14,24 +14,6 @@ info: `-- ds.hero` can be used as a hero component.
 left side of it. If you want to use it then use below given example code 
 and add it inside a `.ftd` file.
 
--- site-doc.header: Invocation:
-
--- cb.code:
-lang: ftd
-max-height.fixed.px: 350
-
-\-- ds.hero: John Doe
-tag: Hello there...
-designation: I Am Passionate Developer!
-avatar: $assets.files.assets.me.jpg
-cta-primary: My Work
-cta-primary-link: index.html
-cta-secondary: Hire Me
-cta-secondary-link: index.html
-
-We are an award-winning strategic design company that provides 
-consultancy services and help you create outstanding digital products.
-
 -- site-doc.header: Demo:
 
 -- site-doc.output:
@@ -49,6 +31,24 @@ We are an award-winning strategic design company that provides
 consultancy services and help you create outstanding digital products.
 
 -- end: site-doc.output
+
+-- site-doc.header: Invocation:
+
+-- cb.code:
+lang: ftd
+max-height.fixed.px: 350
+
+\-- ds.hero: John Doe
+tag: Hello there...
+designation: I Am Passionate Developer!
+avatar: $assets.files.assets.me.jpg
+cta-primary: My Work
+cta-primary-link: index.html
+cta-secondary: Hire Me
+cta-secondary-link: index.html
+
+We are an award-winning strategic design company that provides 
+consultancy services and help you create outstanding digital products.
 
 -- site-doc.header: Properties:
 

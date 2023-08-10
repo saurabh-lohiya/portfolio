@@ -6,7 +6,7 @@
 export: markdown,h0,h1,h2,h3,code,rendered,output,image,iframe,youtube,compact-text,post,posts,featured-post,image-first,image-in-between,without-image,author-bio,tip,not-found-1,not-found-2,link,link-group
 
 -- import: saurabh-lohiya.github.io/portfolio
-export: hero, contact-info, contact-form, skills, services, latest-works, blogs
+export: hero, contact-info, contact-form, skills, services, latest-works, blogs, blog
 
 -- common.site-logo site-logo: $assets.files.assets.ipsum-logo.svg
 
