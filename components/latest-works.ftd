@@ -2,16 +2,8 @@
 
 -- site-doc.doc-home: latest-works
 github-url: https://github.com/saurabh-lohiya/portfolio
+current-package: saurabh-lohiya.github.io/portfolio
 site-title: latest-works
-
--- site-doc.component-doc: `ds.latest-works`
-package-link: https://saurabh-lohiya.github.io/portfolio
-github-link: https://github.com/saurabh-lohiya/portfolio
-package-name: saurabh-lohiya.github.io/portfolio
-info: `-- ds.latest-works` can be used as a latest-works component.
-
-`-- ds.latest-works` this section is used for adding list of projects
-that the proprietor has worked upon.
 
 -- site-doc.header: Demo:
 
@@ -24,6 +16,11 @@ id: work
 A LEAD UX & UI DESIGNER BASED IN CANADA
 
 -- end: site-doc.output
+
+-- site-doc.header: Overview:
+
+`-- ds.latest-works` this section is used for adding list of projects
+that the proprietor has worked upon.
 
 -- site-doc.header: Invocation:
 

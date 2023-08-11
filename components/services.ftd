@@ -2,16 +2,8 @@
 
 -- site-doc.doc-home: services
 github-url: https://github.com/saurabh-lohiya/portfolio
+current-package: saurabh-lohiya.github.io/portfolio
 site-title: services
-
--- site-doc.component-doc: `ds.services`
-package-link: https://saurabh-lohiya.github.io/portfolio
-github-link: https://github.com/saurabh-lohiya/portfolio
-package-name: saurabh-lohiya.github.io/portfolio
-info: `-- ds.services` can be used as a services component.
-
-`-- ds.services` this section is used for adding list of services
-that the proprietor offers.
 
 -- site-doc.header: Demo:
 
@@ -24,6 +16,11 @@ id: service
 A LEAD UX & UI DESIGNER BASED IN CANADA
 
 -- end: site-doc.output
+
+-- site-doc.header: Overview:
+
+`-- ds.services` this section is used for adding list of services
+that the proprietor offers.
 
 -- site-doc.header: Invocation:
 
