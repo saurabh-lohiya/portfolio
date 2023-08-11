@@ -14,6 +14,8 @@ info: `-- ds.skills` can be used as a skills component.
 left side of it. If you want to use it then use below given example code 
 and add it inside a `.ftd` file.
 
+-- site-doc.header: Demo:
+
 -- site-doc.output:
 
 -- ds.skills: MY SKILLS
@@ -33,8 +35,6 @@ max-height.fixed.px: 350
 tag: A LEAD UX & UI DESIGNER BASED IN CANADA
 languages: $common.languages
 achievements: $common.achievements
-
--- site-doc.header: Demo:
 
 -- site-doc.header: Properties:
 
