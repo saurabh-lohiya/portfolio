@@ -2,16 +2,8 @@
 
 -- site-doc.doc-home: contact-form
 github-url: https://github.com/saurabh-lohiya/portfolio
+current-package: saurabh-lohiya.github.io/portfolio
 site-title: contact-form
-
--- site-doc.component-doc: `ds.contact-form`
-package-link: https://saurabh-lohiya.github.io/portfolio
-github-link: https://github.com/saurabh-lohiya/portfolio
-package-name: saurabh-lohiya.github.io/portfolio
-info: `-- ds.contact-form` can be used as a contact-form component.
-
-`-- ds.contact-form` Here site visitors can add their contact details
-like name, email address and subject for proprietor to reach out to them.
 
 -- site-doc.header: Demo:
 
@@ -37,6 +29,11 @@ info: 123 Stree New York City , United States Of America 750065.
 -- end: ds.contact-form
 
 -- end: site-doc.output
+
+-- site-doc.header: Overview:
+
+`-- ds.contact-form` Here site visitors can add their contact details
+like name, email address and subject for proprietor to reach out to them.
 
 -- site-doc.header: Invocation:
 

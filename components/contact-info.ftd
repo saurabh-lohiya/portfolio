@@ -2,17 +2,8 @@
 
 -- site-doc.doc-home: contact-info
 github-url: https://github.com/saurabh-lohiya/portfolio
+current-package: saurabh-lohiya.github.io/portfolio
 site-title: contact-info
-
--- site-doc.component-doc: `ds.contact-info`
-package-link: https://saurabh-lohiya.github.io/portfolio
-github-link: https://github.com/saurabh-lohiya/portfolio
-package-name: saurabh-lohiya.github.io/portfolio
-info: `-- ds.contact-info` can be used as a contact-info component.
-
-`-- ds.contact-info` is used for adding contact information about 
-proprietor that the site visitors can use as POC. Here proprietor
-can add info like Email Address, phone number or Location.
 
 -- site-doc.header: Demo:
 
@@ -22,6 +13,12 @@ can add info like Email Address, phone number or Location.
 info: 123 Stree New York City , United States Of America 750065.
 
 -- end: site-doc.output
+
+-- site-doc.header: Overview:
+
+`-- ds.contact-info` is used for adding contact information about 
+proprietor that the site visitors can use as POC. Here proprietor
+can add info like Email Address, phone number or Location.
 
 -- site-doc.header: Invocation:
 

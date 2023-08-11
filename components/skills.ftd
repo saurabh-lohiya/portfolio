@@ -2,17 +2,8 @@
 
 -- site-doc.doc-home: skills
 github-url: https://github.com/saurabh-lohiya/portfolio
+current-package: saurabh-lohiya.github.io/portfolio
 site-title: skills
-
--- site-doc.component-doc: `ds.skills`
-package-link: https://saurabh-lohiya.github.io/portfolio
-github-link: https://github.com/saurabh-lohiya/portfolio
-package-name: saurabh-lohiya.github.io/portfolio
-info: `-- ds.skills` can be used as a skills component.
-
-`-- ds.skills` contains, a image to the right side and information to the
-left side of it. If you want to use it then use below given example code 
-and add it inside a `.ftd` file.
 
 -- site-doc.header: Demo:
 
@@ -24,6 +15,12 @@ languages: $common.languages
 achievements: $common.achievements
 
 -- end: site-doc.output
+
+-- site-doc.header: Overview:
+
+`-- ds.skills` contains, a image to the right side and information to the
+left side of it. If you want to use it then use below given example code 
+and add it inside a `.ftd` file.
 
 -- site-doc.header: Invocation:
 

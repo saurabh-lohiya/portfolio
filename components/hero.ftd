@@ -2,17 +2,8 @@
 
 -- site-doc.doc-home: hero
 github-url: https://github.com/saurabh-lohiya/portfolio
+current-package: saurabh-lohiya.github.io/portfolio
 site-title: hero
-
--- site-doc.component-doc: `ds.hero`
-package-link: https://saurabh-lohiya.github.io/portfolio
-github-link: https://github.com/saurabh-lohiya/portfolio
-package-name: saurabh-lohiya.github.io/portfolio
-info: `-- ds.hero` can be used as a hero component.
-
-`-- ds.hero` contains, a image to the right side and information to the
-left side of it. If you want to use it then use below given example code 
-and add it inside a `.ftd` file.
 
 -- site-doc.header: Demo:
 
@@ -31,6 +22,12 @@ We are an award-winning strategic design company that provides
 consultancy services and help you create outstanding digital products.
 
 -- end: site-doc.output
+
+-- site-doc.header: Overview
+
+`-- ds.hero` contains, a image to the right side and information to the
+left side of it. If you want to use it then use below given example code 
+and add it inside a `.ftd` file.
 
 -- site-doc.header: Invocation:
 
