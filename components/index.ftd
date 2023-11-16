@@ -13,7 +13,7 @@ github-url: https://github.com/saurabh-lohiya/portfolio
 colors: $ftd.default-colors
 
 -- ds.hero: John Doe
-tag: Hello there...
+tag: Hello all
 designation: I Am Passionate Developer!
 avatar: $assets.files.assets.me.jpg
 cta-primary: My Work
