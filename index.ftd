@@ -6,10 +6,10 @@
 
 -- page:
 
--- hero: John Doe
-tag: Hello there...
+-- hero: Nandhini Devi
+tag: Hello all...
 designation: I Am Passionate Developer!
-avatar: $assets.files.assets.me.jpg
+avatar: $assets.files.assets.profile-picture.jpeg
 cta-primary: My Work
 cta-primary-link: index.html
 cta-secondary: Hire Me
