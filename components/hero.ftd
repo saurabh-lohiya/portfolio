@@ -10,7 +10,7 @@ site-title: hero
 -- site-doc.output:
 
 -- ds.hero: John Doe
-tag: Hello there...
+tag: Hello all...
 designation: I Am Passionate Developer!
 avatar: $assets.files.assets.me.jpg
 cta-primary: My Work
