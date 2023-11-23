@@ -50,6 +50,14 @@ ftd.image-src icon:
 
 
 
+
+
+
+-- record client-list:
+ftd.image-src logo:
+
+
+
 -- record project:
 caption title:
 string sub-title:
@@ -63,6 +71,7 @@ ftd.image-src src:
 caption title:
 body body:
 string tag:
+string link:
 string publishing-date:
 ftd.image-src src:
 
@@ -302,6 +311,32 @@ in creating stylish, modern websites.
 
 
 
+-- client-list list client-lists:
+
+-- client-list:
+logo: $assets.files.assets.monitor.png
+
+-- client-list:
+logo: $assets.files.assets.tags.png
+
+-- client-list:
+logo: $assets.files.assets.messages.svg
+
+-- client-list:
+logo: $assets.files.assets.tablet.png
+
+-- client-list:
+logo: $assets.files.assets.bullseye.png
+
+-- client-list:
+logo: $assets.files.assets.settings.svg
+
+-- end: client-lists
+
+
+
+
+
 -- project list projects:
 
 -- project: Our Photography
@@ -339,6 +374,7 @@ src: $assets.files.assets.wooden-hand.jpeg
 publishing-date: 02 Mar 2023
 tag: Design
 src: $assets.files.assets.blog-1.jpg
+link: blogs/
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
@@ -346,6 +382,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 publishing-date: 02 Mar 2023
 tag: Design
 src: $assets.files.assets.blog-2.jpg
+link: blogs/
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
@@ -353,6 +390,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 publishing-date: 02 Mar 2023
 tag: Design
 src: $assets.files.assets.blog-3.jpg
+link: blogs/
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 

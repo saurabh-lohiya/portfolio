@@ -51,6 +51,16 @@ id: services
 
 A LEAD UX & UI DESIGNER BASED IN CANADA
 
+-- clients: MY CLIENTS
+client-lists: $common.client-lists
+id: clients
+
+-- left-image: Lorem ipsum dolor sit
+image: $assets.files.assets.pineapple.jpeg
+logo: $assets.files.assets.ipsum-logo.svg
+left: true
+
+Cum sint enim id rerum fugit vel enim eius qui provident similique
 
 -- latest-works: LATEST WORKS
 projects: $common.projects
@@ -168,10 +178,10 @@ children: $page.child
 
 
 -- component hero:
-caption title:
-string designation:
-string tag:
-body body:
+optional caption title:
+optional string designation:
+optional string tag:
+optional body body:
 ftd.image-src avatar:
 string cta-primary:
 string cta-primary-link: index.html
@@ -198,21 +208,25 @@ spacing.fixed.px: 15
 align-self: center
 
 -- ftd.text: $hero.tag
+if: { hero.tag != NULL }
 color: $inherited.colors.text-strong
 role: $inherited.types.copy-regular
 style: bold
 
 -- ftd.text: $hero.title
+if: { hero.title != NULL }
 color: $inherited.colors.text-strong
 role: $inherited.types.heading-large
 style: bold
 
 -- ftd.text: $hero.designation
+if: { hero.designation != NULL }
 color: $inherited.colors.text-strong
 role: $inherited.types.heading-tiny
 style: bold
 
 -- ftd.text:
+if: { hero.body != NULL }
 color: $inherited.colors.text-strong
 role: $inherited.types.label-large
 max-width.fixed.percent: 90
@@ -366,9 +380,9 @@ role: $inherited.types.copy-regular
 
 
 -- component contact-form:
-caption title:
-string sub-title:
-body body:
+optional caption title:
+optional string sub-title:
+optional body body:
 string cta-text:
 string link: index.html
 boolean $is-active: false
@@ -388,6 +402,7 @@ width: fill-container
 max-width.fixed.px: $common.max-width
 
 -- ftd.text: $contact-form.title
+if: { contact-form.title != NULL }
 role: $inherited.types.heading-medium
 color: $inherited.colors.text-strong
 style: bold
@@ -402,6 +417,7 @@ margin-top.px if { ftd.device == "mobile" }: 15
 -- end: ftd.column
 
 -- ftd.text:
+if: { contact-form.body != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 margin-top.px: 10
@@ -423,6 +439,7 @@ border-width.px: 1
 border-radius.px: 5
 
 -- ftd.text: $contact-form.sub-title
+if: { contact-form.sub-title != NULL }
 role: $inherited.types.heading-tiny
 color: $inherited.colors.text
 style: bold
@@ -565,8 +582,8 @@ color: $inherited.colors.text
 
 
 -- component latest-works:
-caption title:
-body body:
+optional caption title:
+optional body body:
 $common.project list projects:
 string id:
 
@@ -583,6 +600,7 @@ width: fill-container
 max-width.fixed.px: $common.max-width
 
 -- ftd.text: $latest-works.title
+if: { latest-works.title != NULL }
 role: $inherited.types.heading-large
 color: $inherited.colors.text
 style: bold
@@ -597,6 +615,7 @@ margin-top.px if { ftd.device == "mobile" }: 15
 -- end: ftd.column
 
 -- ftd.text:
+if: { latest-works.body != NULL }
 role: $inherited.types.heading-tiny
 color: $inherited.colors.text
 margin-top.px: 20
@@ -697,15 +716,15 @@ style: bold
 
 
 -- component services:
-caption title:
-body body:
+optional caption title:
+optional body body:
 $common.overhaul list overhauls:
 string id: services
 
 -- ftd.column:
 id: $services.id
 width: fill-container
-background.solid: $inherited.colors.background.step-1
+background.solid: $inherited.colors.background.step-2
 align-content: center
 padding-vertical.px: 100
 padding-horizontal.px if { ftd.device == "mobile" }: 20
@@ -716,6 +735,7 @@ max-width.fixed.px: $common.max-width
 align-content if { ftd.device == "mobile" }: center
 
 -- ftd.text: $services.title
+if: { services.title != NULL }
 role: $inherited.types.heading-large
 color: $inherited.colors.text
 style: bold
@@ -730,6 +750,7 @@ margin-top.px if { ftd.device == "mobile" }: 20
 -- end: ftd.column
 
 -- ftd.text:
+if: { services.body != NULL }
 role: $inherited.types.heading-tiny
 color: $inherited.colors.text
 margin-top.px: 20
@@ -821,9 +842,172 @@ $service.body
 
 
 
--- component blogs:
+-- component clients:
+optional caption title:
+optional body body:
+$common.client-list list client-lists:
+string id: clients
+
+-- ftd.column:
+id: $clients.id
+width: fill-container
+background.solid: $inherited.colors.background.step-1
+align-content: center
+padding-vertical.px: 100
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $common.max-width
+align-content if { ftd.device == "mobile" }: center
+
+-- ftd.text: $clients.title
+if: { clients.title != NULL }
+role: $inherited.types.heading-large
+color: $inherited.colors.text
+style: bold
+
+-- ftd.column:
+width.fixed.px: 100
+height.fixed.px: 2
+background.solid: $inherited.colors.border
+margin-top.px: 10
+margin-top.px if { ftd.device == "mobile" }: 20
+
+-- end: ftd.column
+
+-- ftd.text:
+if: { clients.body != NULL }
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-top.px: 20
+margin-top.px if { ftd.device == "mobile" }: 30
+text-align if { ftd.device == "mobile" }: center
+
+$clients.body
+
+-- ftd.row:
+width: fill-container
+wrap: true
+margin-top.px: 30
+spacing.fixed.px: 30
+
+-- client:
+$loop$: $clients.client-lists as $obj
+logo: $obj.logo
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: clients
+
+
+
+
+
+
+
+
+
+
+-- component client:
+ftd.image-src logo:
+boolean $hover: false
+
+-- ftd.column:
+$on-mouse-enter$: $ftd.set-bool($a = $client.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $client.hover, v = false)
+width.fixed.px: 348
+
+-- ftd.image:
+src: $client.logo
+width.fixed.px: 340
+height.fixed.px: 340
+border-radius.px: 4
+border-width.px: 1
+border-color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- end: client
+
+
+
+
+
+
+
+
+
+
+
+-- component left-image:
 caption title:
 body body:
+ftd.image-src image:
+ftd.image-src logo:
+boolean left: false
+
+-- ftd.row:
+width: fill-container
+align-content: center
+padding-vertical.px: 100
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+background.solid: $inherited.colors.background.step-2
+spacing.fixed.px: 32
+
+-- ftd.image:
+if: { left-image.left }
+src: $left-image.image
+width.fixed.percent: 40
+fit: cover
+
+-- ftd.column:
+width.fixed.percent: 40
+spacing.fixed.px: 24
+
+-- ftd.text: $left-image.title
+role: $inherited.types.heading-medium
+color: $inherited.colors.text-strong
+
+-- ftd.text:
+role: $inherited.types.copy-large
+color: $inherited.colors.text
+
+$left-image.body
+
+-- ftd.image:
+src: $left-image.logo
+width: auto
+fit: cover
+margin-top.px: 64
+
+-- end: ftd.column
+
+-- ftd.image:
+if: { !left-image.left }
+src: $left-image.image
+width.fixed.percent: 40
+fit: cover
+
+-- end: ftd.row
+
+-- end: left-image
+
+
+
+
+
+
+
+
+
+-- component blogs:
+optional caption title:
+optional body body:
 $common.article list articles:
 string id:
 
@@ -840,6 +1024,7 @@ width: fill-container
 max-width.fixed.px: $common.max-width
 
 -- ftd.text: $blogs.title
+if: { blogs.title != NULL }
 role: $inherited.types.heading-large
 color: $inherited.colors.text
 style: bold
@@ -853,6 +1038,7 @@ margin-top.px: 10
 -- end: ftd.column
 
 -- ftd.text:
+if: { blogs.body != NULL }
 role: $inherited.types.heading-tiny
 color: $inherited.colors.text
 margin-top.px: 20
@@ -872,6 +1058,7 @@ $loop$: $blogs.articles as $obj
 publishing-date: $obj.publishing-date
 tag: $obj.tag
 src: $obj.src
+link: $obj.link
 
 $obj.body
 
@@ -895,6 +1082,7 @@ $obj.body
 -- component blog:
 caption title:
 string tag:
+string link:
 body body:
 ftd.image-src src:
 string publishing-date:
@@ -939,6 +1127,7 @@ color: $inherited.colors.text-strong
 margin-top.px: 16
 border-bottom-width.px: 2
 border-color: $inherited.colors.border
+link: $blog.link
 
 -- end: ftd.column
 
@@ -975,8 +1164,8 @@ left.px: -10
 
 
 -- component testimonials:
-caption title:
-body body:
+optional caption title:
+optional body body:
 $common.testimonial list testimonials:
 
 -- ftd.column:
@@ -991,6 +1180,7 @@ width: fill-container
 max-width.fixed.px: $common.max-width
 
 -- ftd.text: $testimonials.title
+if: { testimonials.title != NULL }
 role: $inherited.types.heading-large
 color: $inherited.colors.text
 style: bold
@@ -1004,6 +1194,7 @@ margin-top.px: 10
 -- end: ftd.column
 
 -- ftd.text:
+if: { testimonials.body != NULL }
 role: $inherited.types.heading-tiny
 color: $inherited.colors.text
 margin-top.px: 20
@@ -1096,8 +1287,8 @@ style: bold
 
 
 -- component about-me-container:
-caption title:
-string tag:
+optional caption title:
+optional string tag:
 children child:
 string id:
 
@@ -1115,6 +1306,7 @@ padding-horizontal.px if { ftd.device == "mobile" }: 20
 align-content if { ftd.device == "mobile" }: center
 
 -- ftd.text: $about-me-container.title
+if: { about-me-container.title != NULL }
 role: $inherited.types.heading-large
 color: $inherited.colors.text
 style: bold
@@ -1129,12 +1321,12 @@ margin-top.px if { ftd.device == "mobile" }: 20
 -- end: ftd.column
 
 -- ftd.text: $about-me-container.tag
+if: { about-me-container.tag != NULL }
 role: $inherited.types.heading-tiny
 color: $inherited.colors.text
 margin-top.px: 20
 margin-top.px if { ftd.device == "mobile" }: 30
 text-align if { ftd.device == "mobile" }: center
-
 
 -- ftd.row:
 width: fill-container
@@ -1303,19 +1495,21 @@ cta-link: $about-me-info.cta-link
 
 
 -- component info-group:
-caption title:
-string tag:
+optional caption title:
+optional string tag:
 
 -- ftd.row:
 width.fixed.px: 280
 padding-vertical.px: 5
 
 -- ftd.text: $info-group.title
+if: { info-group.title != NULL }
 role: $inherited.types.label-large
 color: $inherited.colors.text-strong
 width.fixed.px: 90
 
 -- ftd.text: $info-group.tag
+if: { info-group.tag != NULL }
 role: $inherited.types.label-large
 color: $inherited.colors.text
 border-left-width.px: 1
@@ -1384,8 +1578,8 @@ color: $inherited.colors.text-strong
 
 
 -- component skills:
-caption title:
-string tag:
+optional caption title:
+optional string tag:
 common.language list languages:
 common.achievement list achievements:
 
@@ -1401,6 +1595,7 @@ width: fill-container
 max-width.fixed.px: $common.max-width
 
 -- ftd.text: $skills.title
+if: { skills.title != NULL }
 role: $inherited.types.heading-large
 color: $inherited.colors.text
 style: bold
@@ -1415,6 +1610,7 @@ margin-top.px if { ftd.device == "mobile" }: 20
 -- end: ftd.column
 
 -- ftd.text: $skills.tag
+if: { skills.tag != NULL }
 role: $inherited.types.heading-tiny
 color: $inherited.colors.text
 margin-top.px: 20
