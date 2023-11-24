@@ -1452,7 +1452,7 @@ role: $inherited.types.copy-large
 -- end: ftd.row
 
 -- ftd.image:
-if: { article-card-mobile.image != NULL}
+if: { article-card-mobile.image != NULL }
 src: $article-card-mobile.image
 width: fill-container
 height: hug-content
@@ -1580,7 +1580,7 @@ common.post-meta post-data:
 -- post-article-ui: $post-article.post-data.title
 timestamp: $post-article.post-data.published-on
 image: $post-article.post-data.post-image
-link:  $post-article.post-data.post-url
+link: $post-article.post-data.post-url
 body: $post-article.post-data.body
 author: $post-article.post-data.author
 
@@ -1612,7 +1612,7 @@ string written-by: By
 -- post-article-ui-desktop: $post-article-ui.title
 timestamp: $post-article-ui.timestamp
 image: $post-article-ui.image
-link:  $post-article-ui.link
+link: $post-article-ui.link
 body: $post-article-ui.body
 author: $post-article-ui.author
 
@@ -1623,7 +1623,7 @@ author: $post-article-ui.author
 -- post-article-ui-mobile: $post-article-ui.title
 timestamp: $post-article-ui.timestamp
 image: $post-article-ui.image
-link:  $post-article-ui.link
+link: $post-article-ui.link
 body: $post-article-ui.body
 author: $post-article-ui.author
 
