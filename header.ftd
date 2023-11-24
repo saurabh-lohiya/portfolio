@@ -56,7 +56,7 @@ site-logo: $header.site-logo
 sections: $header.sections
 
 -- end: ftd.desktop
-  
+
 -- end: ftd.column
 
 -- end: header
