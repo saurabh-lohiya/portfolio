@@ -1076,7 +1076,7 @@ margin-top.px: 30
 spacing.fixed.px: 30
 
 -- client:
-$loop$: $clients.client-lists as $obj
+for: $obj in $clients.client-lists
 logo: $obj.logo
 
 -- end: ftd.row
@@ -1100,11 +1100,6 @@ logo: $obj.logo
 ftd.image-src logo:
 boolean $hover: false
 
--- ftd.column:
-$on-mouse-enter$: $ftd.set-bool($a = $client.hover, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $client.hover, v = false)
-width.fixed.px: 348
-
 -- ftd.image:
 src: $client.logo
 width.fixed.px: 340
@@ -1112,8 +1107,8 @@ height.fixed.px: 340
 border-radius.px: 4
 border-width.px: 1
 border-color: $inherited.colors.text-strong
-
--- end: ftd.column
+$on-mouse-enter$: $ftd.set-bool($a = $client.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $client.hover, v = false)
 
 -- end: client
 
