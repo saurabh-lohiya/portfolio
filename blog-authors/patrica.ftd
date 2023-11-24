@@ -1,0 +1,23 @@
+
+
+
+
+
+-- common.author-meta patrica: Patrica AVA
+profile: UI Designer
+bio-url:  blog-authors/patrica/
+image: $assets.files.static.avatar.svg
+company: XVY Pvt. Ltd.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+
+
+
+
+-- pf.page:
+
+-- pf.author-bio: 
+author: $patrica
+
+-- end: pf.page

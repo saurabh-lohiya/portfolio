@@ -43,7 +43,7 @@ spread.px: 2
 
 
 
--- record overhaul:
+-- record category:
 caption title:
 body body:
 ftd.image-src icon:
@@ -267,45 +267,77 @@ tag: Available
 
 
 
--- overhaul list overhauls:
+-- category list categories-1:
 
--- overhaul: Unique Design
+-- category: Unique Design
 icon: $assets.files.assets.monitor.png
 
 I design and develop services for customers of all sizes, specializing 
 in creating stylish, modern websites.
 
--- overhaul: Unique Design
+-- category: Unique Design
 icon: $assets.files.assets.tags.png
 
 I design and develop services for customers of all sizes, specializing 
 in creating stylish, modern websites.
 
--- overhaul: Unique Design
+-- end: categories-1
+
+
+
+
+
+
+-- category list categories-2:
+
+-- category: Unique Design
 icon: $assets.files.assets.messages.svg
 
 I design and develop services for customers of all sizes, specializing 
 in creating stylish, modern websites.
 
--- overhaul: Unique Design
+-- category: Unique Design
 icon: $assets.files.assets.tablet.png
 
 I design and develop services for customers of all sizes, specializing 
 in creating stylish, modern websites.
 
--- overhaul: Unique Design
+-- category: Unique Design
 icon: $assets.files.assets.bullseye.png
 
 I design and develop services for customers of all sizes, specializing 
 in creating stylish, modern websites.
 
--- overhaul: Unique Design
+-- category: Unique Design
 icon: $assets.files.assets.settings.svg
 
 I design and develop services for customers of all sizes, specializing 
 in creating stylish, modern websites.
 
--- end: overhauls
+-- end: categories-2
+
+
+
+
+
+
+
+-- category list categories-3:
+
+-- category: Unique Design
+icon: $assets.files.assets.monitor.png
+
+I design and develop services for customers of all sizes, specializing 
+in creating stylish, modern websites.
+
+-- category: Unique Design
+icon: $assets.files.assets.tags.png
+
+I design and develop services for customers of all sizes, specializing 
+in creating stylish, modern websites.
+
+
+-- end: categories-3
 
 
 
@@ -416,3 +448,28 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint
 
 -- end: testimonials
+
+
+
+
+
+
+-- record author-meta:
+caption title:
+string profile:
+string company:
+optional string bio-url:
+optional ftd.image-src image:
+body body:
+
+
+
+
+
+-- record post-meta:
+caption title:
+string published-on:
+optional ftd.image-src post-image:
+optional body body:
+string post-url:
+author-meta author:

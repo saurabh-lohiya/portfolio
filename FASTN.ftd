@@ -9,6 +9,7 @@ favicon: /-/saurabh-lohiya.github.io/portfolio/favicon.ico
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/roboto-typography
 -- fastn.dependency: fastn-community.github.io/dark-flame-cs
+-- fastn.dependency: saurabh-lohiya.github.io/portfolio as pf
 
 -- fastn.auto-import: saurabh-lohiya.github.io/portfolio/FASTN/ds
 -- fastn.auto-import: saurabh-lohiya.github.io/portfolio/common
@@ -16,6 +17,7 @@ favicon: /-/saurabh-lohiya.github.io/portfolio/favicon.ico
 -- fastn.auto-import: site-doc
 -- fastn.auto-import: doc-site
 -- fastn.auto-import: cb
+-- fastn.auto-import: pf
 
 -- fastn.sitemap:
 
