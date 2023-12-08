@@ -2,24 +2,24 @@
 -- import: saurabh-lohiya.github.io/portfolio/header as h
 -- import: fastn-community.github.io/forest-cs as cs
 -- import: fastn/processors as pr
--- import: saurabh-lohiya.github.io/portfolio/blog-articles/rrr
+-- import: saurabh-lohiya.github.io/portfolio/blog-articles/sample-post
 
 
 -- page:
 
 -- hero: Are you in the business of saving the planet?
 tag: Copywriting for Sustainable Businesses
-avatar: $assets.files.assets.tree.jpg
+avatar: $assets.files.assets.profile-picture.jpeg
 cta-primary: My Work
 cta-primary-link: /#latest-works
 cta-secondary: Book a Meeting
 cta-secondary-link: https://calendly.com/nandhini-copywriter/discovery-call/
 
 If you're someone who doesn't just sell stuff but rallies behind 
-a cause, I'll help you create content that'll click with your audience and 
+a cause, I'll whip up words that'll click with your audience and 
 turn them into full-on cheerleaders for the planet and your business. 
 
--- about-me-container: About Me
+-- about-me-container: ABOUT ME
 tag: A freelance copywriter based in India
 id: about-me
  
@@ -42,42 +42,61 @@ to being sustainable, rather than it being a choice.
 
 -- end: about-me-container
 
--- left-image: Leading sustainable practices for a better future.
-image: $assets.files.assets.desk.jpg
-logo: $assets.files.assets.igbc.jpg
-;; left: true
+;; -- skills: MY SKILLS
+;; tag: A freelance copywriter based in India
+;; languages: $common.languages
+;; achievements: $common.achievements
 
-Proud to be an Indian Green Building Accredited Professional
-
--- clients: My Clients
-client-lists: $common.client-lists
-id: clients
-
--- services: Latest Works
+-- services: MY SERVICES
 categories-1: $common.categories-1
 categories-2: $common.categories-2
 categories-3: $common.categories-3
-category-title-1: Website Content
-category-title-2: Social Media Content
-category-title-3: Email Copy
+category-title-1: Web Development
+category-title-2: Business
+category-title-3: Mobile App
 id: services
 
 Copy for Change
 
+-- clients: MY CLIENTS
+client-lists: $common.client-lists
+id: clients
 
-/-- latest-works: My Services
+-- left-image: Lorem ipsum dolor sit
+image: $assets.files.assets.pineapple.jpeg
+logo: $assets.files.assets.ipsum-logo.svg
+left: true
+
+Cum sint enim id rerum fugit vel enim eius qui provident similique
+
+-- latest-works: LATEST WORKS
 projects: $common.projects
 id: latest-works
 
+Website Copy
 
--- testimonials: Testimonials
+-- testimonials: TESTIMONIALS
 testimonials: $common.testimonials
 
--- posts: Blogs
+A freelance copywriter based in India
+
+-- posts: Must Read Articles
 id: blogs
 
 -- post-article:
-post-data: $rrr.meta
+post-data: $sample-post.meta-1
+
+-- post-article:
+post-data: $sample-post.meta-2
+
+-- post-article:
+post-data: $sample-post.meta-1
+
+-- post-article:
+post-data: $sample-post.meta-1
+
+-- post-article:
+post-data: $sample-post.meta-1
 
 -- end: posts
 
@@ -85,11 +104,25 @@ post-data: $rrr.meta
 articles: $common.articles
 id: blogs
 
--- contact-form: Get in Touch
-sub-title: How can I help your green business?
-cta-text: Send Message
+It’s time we shift the narrative from 
+"*the planet is dying*" to one of hope and optimism. 
+
+-- contact-form: Contact Me
+sub-title: SAY SOMETHING
+cta-text: SEND MESSAGE
 link: index.html
 id: contact
+
+A freelance copywriter based in India
+
+;; -- contact-info: Our Address
+;; info: 123 Stree New York City , United States Of America 750065.
+
+;; -- contact-info: Our Address
+;; info: 123 Stree New York City , United States Of America 750065.
+
+;; -- contact-info: Our Address
+;; info: 123 Stree New York City , United States Of America 750065.
 
 -- end: contact-form
 
@@ -374,6 +407,7 @@ role: $inherited.types.copy-regular
 
 
 -- component contact-form:
+
 optional caption title:
 optional string sub-title:
 optional body body:
@@ -801,6 +835,7 @@ $obj.body
 role: $inherited.types.heading-small
 color: $inherited.colors.text-strong
 
+
 -- ftd.row:
 width: fill-container
 wrap: true
@@ -813,8 +848,6 @@ icon: $obj.icon
 $obj.body
 
 -- end: ftd.row
-
--- end: ftd.column
 
 -- end: ftd.column
 
@@ -849,9 +882,9 @@ border-radius.px: 5
 
 -- ftd.image:
 src: $service-1.icon
-padding.px: 3
-width.fixed.px: 108
-height.fixed.px: 108
+padding.px: 12
+width.fixed.px: 64
+height.fixed.px: 64
 border-radius.percent: 50
 border-width.px: 1
 border-style: dotted
@@ -901,11 +934,12 @@ background.solid: $inherited.colors.background.step-2
 border-width.px: 1
 border-radius.px: 5
 
+-- ftd.column:
 -- ftd.image:
 src: $service-2.icon
-padding.px: 3
-width.fixed.px: 108
-height.fixed.px: 108
+padding.px: 12
+width.fixed.px: 64
+height.fixed.px: 64
 border-radius.percent: 50
 border-width.px: 1
 border-style: dotted
@@ -939,7 +973,6 @@ $service-2.body
 
 
 
-
 -- component service-3:
 caption title:
 body body:
@@ -958,13 +991,14 @@ border-radius.px: 5
 
 -- ftd.image:
 src: $service-3.icon
-padding.px: 3
-width.fixed.px: 108
-height.fixed.px: 108
+padding.px: 12
+width.fixed.px: 64
+height.fixed.px: 64
 border-radius.percent: 50
 border-width.px: 1
 border-style: dotted
 border-color: $inherited.colors.text-strong
+
 
 -- ftd.text: $service-3.title
 role: $inherited.types.label-large
@@ -1064,7 +1098,6 @@ logo: $obj.logo
 
 
 
-
 -- component client:
 ftd.image-src logo:
 boolean $hover: false
@@ -1089,8 +1122,6 @@ $on-mouse-leave$: $ftd.set-bool($a = $client.hover, v = false)
 
 
 
-
-
 -- component left-image:
 caption title:
 body body:
@@ -1103,18 +1134,14 @@ width: fill-container
 align-content: center
 padding-vertical.px: 100
 padding-horizontal.px if { ftd.device == "mobile" }: 20
-background.solid: $inherited.colors.background.base
+background.solid: $inherited.colors.background.step-2
 spacing.fixed.px: 32
 
 -- ftd.image:
 if: { left-image.left }
 src: $left-image.image
-width: fill-container
-height: fill-container
-background.solid: $inherited.colors.background.base
-padding.px: 14
-border-radius.px: 5
-border-width.px: 1
+width.fixed.percent: 40
+fit: cover
 
 -- ftd.column:
 width.fixed.percent: 40
@@ -1132,7 +1159,7 @@ $left-image.body
 
 -- ftd.image:
 src: $left-image.logo
-width.fixed.percent: 40
+width: auto
 fit: cover
 margin-top.px: 64
 
