@@ -19,7 +19,7 @@
 
 -- ftd.color overlay: #00000099
 
--- integer max-width: 1140
+-- integer max-width: 1200
 
 
 -- ftd.shadow shadow-light:
@@ -43,10 +43,16 @@ spread.px: 2
 
 
 
--- record overhaul:
+-- record category:
 caption title:
 body body:
 ftd.image-src icon:
+
+
+
+-- record client-list:
+ftd.image-src logo:
+
 
 
 
@@ -63,6 +69,7 @@ ftd.image-src src:
 caption title:
 body body:
 string tag:
+string link:
 string publishing-date:
 ftd.image-src src:
 
@@ -158,7 +165,7 @@ icon: $assets.files.assets.info.svg
 -- sub-section: SERVICES
 icon: $assets.files.assets.service.png
 
--- sub-section: PORTFOLIO
+-- sub-section: LATEST WORKS
 icon: $assets.files.assets.portfolio.png
 
 -- sub-section: BLOG
@@ -173,48 +180,22 @@ icon: $assets.files.assets.contact.png
 
 
 
--- language list languages:
-
--- language: HTML5
-
--- language: CSS3
-
--- language: Javascript
-
--- language: React
-
--- language: Vue
-
--- language: Django
-
--- language: NodeJS
-
--- language: UI/UX Designer
-
--- language: PHP
-
--- language: Angular
-
--- language: MY-SQL
-
--- end: languages
-
 
 
 
 -- social list socials:
 
--- social:
-icon: $assets.files.assets.facebook.svg
-link: /
+;; -- social:
+;; icon: $assets.files.assets.facebook.svg
+;; link: /
 
--- social:
-icon: $assets.files.assets.twitter.svg
-link: /
+;; -- social:
+;; icon: $assets.files.assets.twitter.svg
+;; link: /
 
--- social:
-icon: $assets.files.assets.instagram.svg
-link: /
+;; -- social:
+;; icon: $assets.files.assets.instagram.svg
+;; link: /
 
 -- social:
 icon: $assets.files.assets.li.svg
@@ -226,91 +207,126 @@ link: /
 
 
 
--- info list info-list:
-
--- info: Birthday
-tag: 4th april 1991
-
--- info: E-mail
-tag: info@domail.com
-
--- info: Age
-tag: 22 Yr
-
--- info: Phone
-tag: 880-9092-033
-
--- info: Residence
-tag: Canara
-
--- info: Skype
-tag: skype.0404
-
--- info: Address
-tag: California
-
--- info: Freelance
-tag: Available
-
--- end: info-list
 
 
+-- category list categories-1:
+
+-- category: Rain Centre
+icon: $assets.files.assets.rc-logo.png
+
+The Rain Centre is an amazing NGO that's all about promoting 
+rainwater harvesting. I revamped their website copy, and gave a complete 
+makeover to their decade-old website.
+
+-- category: fastn
+icon: $assets.files.assets.fastn-logo.png
+
+fastn is India's first programming language for rapid website creation. 
+I'm beyond excited to be riding alongside them and helping them with content for their 
+website, blog, presentations, socials and more. 
+
+-- category: Art of Design
+icon: $assets.files.assets.aod-logo.png
+
+I revamped the old sales page and wrote a compelling copy to promote their UI/UX workshop. 
+Our collaboration resulted in a successful launch that generated a ROI of 423% in just 6 days. 
+
+-- category: Alchi Design Studio
+icon: $assets.files.assets.aod-logo.png
+
+I helped them revamp their website. Provided clear and concise messaging and made sure 
+the content was SEO-friendly.
+
+-- end: categories-1
+
+
+-- category list categories-2:
+
+-- category: Art of Design
+icon: $assets.files.assets.aod-logo.png
+
+I helped them generate a 423% ROI in just 6 days. (Mind you, their page was inactive for a year)
+I also grew their Instagram following by 300% in less than 2 weeks.
+
+-- category: Cena Nutrition
+icon: $assets.files.assets.cena-logo.png
+
+I'm the go-to person for Cena's social media marketing and management. 
+I'm currently handling their Instagram, Facebook and Youtube accounts.
+
+-- category: Wandereaze
+icon: $assets.files.assets.wandereaze-logo.png
+
+They are an AI itinerary Generator and I'm currently handling their Instagram account.
+
+
+-- end: categories-2
 
 
 
--- overhaul list overhauls:
+-- category list categories-3:
 
--- overhaul: Unique Design
-icon: $assets.files.assets.monitor.png
+-- category: Postalytics
+icon: $assets.files.assets.postalytics-logo.png
 
-I design and develop services for customers of all sizes, specializing 
-in creating stylish, modern websites.
+They are a Direct-Mail Marketing Enterprise. I helped them achieve good open rate than 
+the previous emails (aprrox. < 22.85%).
 
--- overhaul: Unique Design
-icon: $assets.files.assets.tags.png
+-- category: Soft Bones
+icon: $assets.files.assets.soft-bones-logo.png
 
-I design and develop services for customers of all sizes, specializing 
-in creating stylish, modern websites.
+I created an Annual Appeal Letter Email Copy for Soft Bones to raise donations and 
+support for their community living with HPP
 
--- overhaul: Unique Design
-icon: $assets.files.assets.messages.svg
+-- end: categories-3
 
-I design and develop services for customers of all sizes, specializing 
-in creating stylish, modern websites.
 
--- overhaul: Unique Design
-icon: $assets.files.assets.tablet.png
 
-I design and develop services for customers of all sizes, specializing 
-in creating stylish, modern websites.
 
--- overhaul: Unique Design
-icon: $assets.files.assets.bullseye.png
 
-I design and develop services for customers of all sizes, specializing 
-in creating stylish, modern websites.
+-- client-list list client-lists:
 
--- overhaul: Unique Design
-icon: $assets.files.assets.settings.svg
+-- client-list:
+logo: $assets.files.assets.fastn-logo.png
 
-I design and develop services for customers of all sizes, specializing 
-in creating stylish, modern websites.
+-- client-list:
+logo: $assets.files.assets.cena-logo.png
 
--- end: overhauls
+-- client-list:
+logo: $assets.files.assets.alchi-logo.png
 
+-- client-list:
+logo: $assets.files.assets.aod-logo.png
+
+-- client-list:
+logo: $assets.files.assets.wandereaze-logo.png
+
+-- client-list:
+logo: $assets.files.assets.rc-logo.png
+
+-- client-list:
+logo: $assets.files.assets.postalytics-logo.png
+
+-- client-list:
+logo: $assets.files.assets.tracer-logo.png
+
+-- client-list:
+logo: $assets.files.assets.kodrite-logo.png
+
+-- end: client-lists
 
 
 
 
 -- project list projects:
 
--- project: Our Photography
-sub-title: Design
-src: $assets.files.assets.leaves.jpeg
+-- project: Rain Centre
+sub-title: Website Copy
+src: $assets.files.assets.rain-centre.png
 
--- project: Our Photography
-sub-title: Design
-src: $assets.files.assets.coffee.jpeg
+-- project: fastn
+sub-title: Website Copy
+src: $assets.files.assets.fastn.png
 
 -- project: Our Photography
 sub-title: Design
@@ -335,26 +351,15 @@ src: $assets.files.assets.wooden-hand.jpeg
 
 -- article list articles:
 
--- article: Make your Marketing website
+-- article: RRR of Sustainable Marketing
 publishing-date: 02 Mar 2023
-tag: Design
-src: $assets.files.assets.blog-1.jpg
+tag: Sustaibale Marketing
+src: $assets.files.assets.rrr.png
+link: blog-articles/rrr/
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Picture this: You're browsing your favourite social media platform, 
+scrolling through an endless feed of ads and products. Suddenly...
 
--- article: Make your Marketing website
-publishing-date: 02 Mar 2023
-tag: Design
-src: $assets.files.assets.blog-2.jpg
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-
--- article: Make your Marketing website
-publishing-date: 02 Mar 2023
-tag: Design
-src: $assets.files.assets.blog-3.jpg
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
 -- end: articles
 
@@ -363,18 +368,43 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
 -- testimonial list testimonials:
 
--- testimonial: Nancy Bayers
+-- testimonial: Navaneeth
 designation: Co-Founder
-src: $assets.files.assets.testimonial-1.jpeg
+src: $assets.files.assets.navaneeth.png
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-molestiae quas vel sint 
+I strongly recommend Nandhini's services as a Sales and Marketing Copywriter. 
+She has in-depth knowledge of SEO, Sales Pipeline and Digital Marketing Strategy. 
+She has a very strong work ethic. She understands iterations clearly and easily reaches the end outcome.
 
--- testimonial: Nancy Bayers
-designation: Co-Founder
-src: $assets.files.assets.testimonial-2.jpeg
+-- testimonial: Harleen Kaur
+designation: Manager, Tracer India
+src: $assets.files.assets.harleen.png
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-molestiae quas vel sint
+Very competent and enthusiastic. Never missed a deadline.
 
 -- end: testimonials
+
+
+
+
+
+
+-- record author-meta:
+caption title:
+string profile:
+string company:
+optional string bio-url:
+optional ftd.image-src image:
+body body:
+
+
+
+
+
+-- record post-meta:
+caption title:
+string published-on:
+optional ftd.image-src post-image:
+optional body body:
+string post-url:
+author-meta author:
