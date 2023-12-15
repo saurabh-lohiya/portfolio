@@ -2,14 +2,14 @@
 -- import: saurabh-lohiya.github.io/portfolio/header as h
 -- import: fastn-community.github.io/forest-cs as cs
 -- import: fastn/processors as pr
--- import: saurabh-lohiya.github.io/portfolio/blog-articles/rrr
+-- import: nandhinidevie.github.io/portfolio/blog-articles/rrr
 
 
 -- page:
 
 -- hero: Are you in the business of saving the planet?
 tag: Copywriting for Sustainable Businesses
-avatar: $assets.files.assets.tree.jpg
+avatar: $self-assets.files.assets.tree.jpg
 cta-primary: My Work
 cta-primary-link: /#latest-works
 cta-secondary: Book a Meeting
@@ -24,8 +24,8 @@ tag: A freelance copywriter based in India
 id: about-me
  
 -- about-me-portrait:
-socials: $common.socials
-src: $assets.files.assets.profile-picture.jpeg
+socials: $self-common.socials
+src: $self-assets.files.assets.profile-picture.jpeg
 
 -- about-me-info: I'm Nandhini
 tag: Welcome to my world of daring copy, where words are a little rebellious, a tad bold, and always unforgettable.
@@ -43,20 +43,20 @@ to being sustainable, rather than it being a choice.
 -- end: about-me-container
 
 -- left-image: Leading sustainable practices for a better future.
-image: $assets.files.assets.desk.jpg
-logo: $assets.files.assets.igbc.jpg
+image: $self-assets.files.assets.desk.jpg
+logo: $self-assets.files.assets.igbc.jpg
 ;; left: true
 
 Proud to be an Indian Green Building Accredited Professional
 
 -- clients: My Clients
-client-lists: $common.client-lists
+client-lists: $self-common.client-lists
 id: clients
 
 -- services: Latest Works
-categories-1: $common.categories-1
-categories-2: $common.categories-2
-categories-3: $common.categories-3
+categories-1: $self-common.categories-1
+categories-2: $self-common.categories-2
+categories-3: $self-common.categories-3
 category-title-1: Website Content
 category-title-2: Social Media Content
 category-title-3: Email Copy
@@ -94,7 +94,7 @@ id: contact
 -- end: contact-form
 
 -- footer:
-socials: $common.socials
+socials: $self-common.socials
 copyright: © 2023 copyright all right reserved
 
 -- end: footer
@@ -578,7 +578,7 @@ color: $inherited.colors.text
 -- component latest-works:
 optional caption title:
 optional body body:
-$common.project list projects:
+self-common.project list projects:
 string id:
 
 -- ftd.column:
@@ -715,9 +715,9 @@ optional body body:
 string category-title-1:
 string category-title-2:
 string category-title-3:
-$common.category list categories-1:
-$common.category list categories-2:
-$common.category list categories-3:
+self-common.category list categories-1:
+self-common.category list categories-2:
+self-common.category list categories-3:
 string id: services
 
 -- ftd.column:
@@ -997,7 +997,7 @@ $service-3.body
 -- component clients:
 optional caption title:
 optional body body:
-$common.client-list list client-lists:
+self-common.client-list list client-lists:
 string id: clients
 
 -- ftd.column:
@@ -1159,7 +1159,7 @@ fit: cover
 
 
 -- component post:
-common.post-meta meta:
+self-common.post-meta meta:
 children container:
 optional boolean sidebar: false
 string share-txt: Share
@@ -1194,7 +1194,7 @@ $post.meta.body
 -- component article-card:
 caption title:
 optional ftd.image-src image:
-common.author-meta author:
+self-common.author-meta author:
 string timestamp:
 optional body body:
 children container:
@@ -1245,7 +1245,7 @@ right-sidebar: $article-card.right-sidebar
 -- component article-card-desktop:
 caption title:
 optional ftd.image-src image:
-common.author-meta author:
+self-common.author-meta author:
 string timestamp:
 optional body body:
 children container:
@@ -1395,7 +1395,7 @@ spacing.fixed.px: 32
 -- component article-card-mobile:
 caption title:
 optional ftd.image-src image:
-common.author-meta author:
+self-common.author-meta author:
 string timestamp:
 optional body body:
 children container:
@@ -1548,7 +1548,7 @@ align-content if { ftd.device == "mobile" }: center
 
 
 -- component post-article:
-common.post-meta post-data:
+self-common.post-meta post-data:
 
 -- post-article-ui: $post-article.post-data.title
 timestamp: $post-article.post-data.published-on
@@ -1574,7 +1574,7 @@ string timestamp:
 ftd.image-src image: 
 string link:
 body body:
-optional common.author-meta author:
+optional self-common.author-meta author:
 string posted-on: Posted on
 string written-by: By
 
@@ -1621,7 +1621,7 @@ string timestamp:
 ftd.image-src image: 
 string link:
 body body:
-optional common.author-meta author:
+optional self-common.author-meta author:
 string posted-on: Posted on
 string written-by: By
 
@@ -1699,7 +1699,7 @@ string timestamp:
 ftd.image-src image: 
 string link:
 body body:
-optional common.author-meta author:
+optional self-common.author-meta author:
 string posted-on: Posted on
 string written-by: By
 
@@ -2101,7 +2101,7 @@ children: $about-me-container.child
 
 
 -- component about-me-portrait:
-$common.social list socials:
+self-common.social list socials:
 ftd.image-src src:
 
 -- ftd.column:
@@ -2189,7 +2189,7 @@ string tag:
 body body:
 string cta-text:
 string cta-link:
-$common.info list info-list:
+self-common.info list info-list:
 
 -- ftd.column:
 width.fixed.percent: 55
@@ -2278,7 +2278,7 @@ padding-left.px: 15
 
 
 -- component footer:
-$common.social list socials:
+self-common.social list socials:
 string copyright:
 
 -- ftd.column:

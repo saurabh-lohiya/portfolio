@@ -185,17 +185,17 @@ icon: $assets.files.assets.contact.png
 
 -- social list socials:
 
-;; -- social:
-;; icon: $assets.files.assets.facebook.svg
-;; link: /
+-- social:
+icon: $assets.files.assets.facebook.svg
+link: /
 
-;; -- social:
-;; icon: $assets.files.assets.twitter.svg
-;; link: /
+-- social:
+icon: $assets.files.assets.twitter.svg
+link: /
 
-;; -- social:
-;; icon: $assets.files.assets.instagram.svg
-;; link: /
+-- social:
+icon: $assets.files.assets.instagram.svg
+link: /
 
 -- social:
 icon: $assets.files.assets.li.svg
@@ -212,27 +212,27 @@ link: /
 -- category list categories-1:
 
 -- category: Rain Centre
-icon: $assets.files.assets.rc-logo.png
+icon: $self-assets.files.assets.rc-logo.png
 
 The Rain Centre is an amazing NGO that's all about promoting 
 rainwater harvesting. I revamped their website copy, and gave a complete 
 makeover to their decade-old website.
 
 -- category: fastn
-icon: $assets.files.assets.fastn-logo.png
+icon: $self-assets.files.assets.fastn-logo.png
 
 fastn is India's first programming language for rapid website creation. 
 I'm beyond excited to be riding alongside them and helping them with content for their 
 website, blog, presentations, socials and more. 
 
 -- category: Art of Design
-icon: $assets.files.assets.aod-logo.png
+icon: $self-assets.files.assets.aod-logo.png
 
 I revamped the old sales page and wrote a compelling copy to promote their UI/UX workshop. 
 Our collaboration resulted in a successful launch that generated a ROI of 423% in just 6 days. 
 
 -- category: Alchi Design Studio
-icon: $assets.files.assets.aod-logo.png
+icon: $self-assets.files.assets.aod-logo.png
 
 I helped them revamp their website. Provided clear and concise messaging and made sure 
 the content was SEO-friendly.
@@ -243,19 +243,19 @@ the content was SEO-friendly.
 -- category list categories-2:
 
 -- category: Art of Design
-icon: $assets.files.assets.aod-logo.png
+icon: $self-assets.files.assets.aod-logo.png
 
 I helped them generate a 423% ROI in just 6 days. (Mind you, their page was inactive for a year)
 I also grew their Instagram following by 300% in less than 2 weeks.
 
 -- category: Cena Nutrition
-icon: $assets.files.assets.cena-logo.png
+icon: $self-assets.files.assets.cena-logo.png
 
 I'm the go-to person for Cena's social media marketing and management. 
 I'm currently handling their Instagram, Facebook and Youtube accounts.
 
 -- category: Wandereaze
-icon: $assets.files.assets.wandereaze-logo.png
+icon: $self-assets.files.assets.wandereaze-logo.png
 
 They are an AI itinerary Generator and I'm currently handling their Instagram account.
 
@@ -267,13 +267,13 @@ They are an AI itinerary Generator and I'm currently handling their Instagram ac
 -- category list categories-3:
 
 -- category: Postalytics
-icon: $assets.files.assets.postalytics-logo.png
+icon: $self-assets.files.assets.postalytics-logo.png
 
 They are a Direct-Mail Marketing Enterprise. I helped them achieve good open rate than 
 the previous emails (aprrox. < 22.85%).
 
 -- category: Soft Bones
-icon: $assets.files.assets.soft-bones-logo.png
+icon: $self-assets.files.assets.soft-bones-logo.png
 
 I created an Annual Appeal Letter Email Copy for Soft Bones to raise donations and 
 support for their community living with HPP
@@ -287,31 +287,31 @@ support for their community living with HPP
 -- client-list list client-lists:
 
 -- client-list:
-logo: $assets.files.assets.fastn-logo.png
+logo: $self-assets.files.assets.fastn-logo.png
 
 -- client-list:
-logo: $assets.files.assets.cena-logo.png
+logo: $self-assets.files.assets.cena-logo.png
 
 -- client-list:
-logo: $assets.files.assets.alchi-logo.png
+logo: $self-assets.files.assets.alchi-logo.png
 
 -- client-list:
-logo: $assets.files.assets.aod-logo.png
+logo: $self-assets.files.assets.aod-logo.png
 
 -- client-list:
-logo: $assets.files.assets.wandereaze-logo.png
+logo: $self-assets.files.assets.wandereaze-logo.png
 
 -- client-list:
-logo: $assets.files.assets.rc-logo.png
+logo: $self-assets.files.assets.rc-logo.png
 
 -- client-list:
-logo: $assets.files.assets.postalytics-logo.png
+logo: $self-assets.files.assets.postalytics-logo.png
 
 -- client-list:
-logo: $assets.files.assets.tracer-logo.png
+logo: $self-assets.files.assets.tracer-logo.png
 
 -- client-list:
-logo: $assets.files.assets.kodrite-logo.png
+logo: $self-assets.files.assets.kodrite-logo.png
 
 -- end: client-lists
 
@@ -354,7 +354,7 @@ src: $assets.files.assets.wooden-hand.jpeg
 -- article: RRR of Sustainable Marketing
 publishing-date: 02 Mar 2023
 tag: Sustaibale Marketing
-src: $assets.files.assets.rrr.png
+src: $self-assets.files.assets.rrr.png
 link: blog-articles/rrr/
 
 Picture this: You're browsing your favourite social media platform, 
@@ -408,3 +408,190 @@ optional ftd.image-src post-image:
 optional body body:
 string post-url:
 author-meta author:
+
+
+
+
+
+
+-- component author-bio:
+author-meta author:
+
+-- ftd.column:
+
+-- author-bio-card: $author-bio.author.title
+profile: $author-bio.author.profile
+company: $author-bio.author.company
+avatar: $author-bio.author.image
+
+$author-bio.author.body
+
+-- end: ftd.column
+
+-- end: author-bio
+
+
+
+
+
+
+
+
+
+
+-- component author-bio-card:
+caption title:
+string profile:
+optional string company:
+ftd.image-src avatar:
+body body:
+
+-- ftd.column:
+width: fill-container
+color: $inherited.colors.text
+spacing.fixed.px: 24
+margin.px if { ftd.device != "mobile" }: 12
+
+-- ftd.desktop:
+
+-- author-bio-desktop: $author-bio-card.title
+profile: $author-bio-card.profile
+company: $author-bio-card.company
+avatar: $author-bio-card.avatar
+body: $author-bio-card.body
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- author-bio-mobile: $author-bio-card.title
+profile: $author-bio-card.profile
+company: $author-bio-card.company
+avatar: $author-bio-card.avatar
+body: $author-bio-card.body
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: author-bio-card
+
+
+
+
+
+
+
+
+
+
+-- component author-bio-desktop:
+caption title:
+string profile:
+optional string company:
+ftd.image-src avatar:
+body body:
+
+-- ftd.column:
+width: fill-container
+color: $inherited.colors.text
+spacing.fixed.px: 32
+margin-top.px: 12
+margin-bottom.px: 12
+margin-left.px: 12
+margin-right.px: 12
+
+-- ftd.row:
+spacing.fixed.px: 24
+
+-- ftd.column:
+width.fixed.px: 152
+
+-- ftd.image:
+src: $author-bio-desktop.avatar
+width: fill-container
+height: fill-container
+border-radius.px: 500
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+align-content: left
+
+-- ftd.text: $author-bio-desktop.title
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+margin-bottom.px: 16
+
+-- ftd.text: $author-bio-desktop.profile
+role: $inherited.types.copy-small
+margin-bottom.px: 4
+
+-- ftd.text: $author-bio-desktop.company
+role: $inherited.types.copy-small
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.text:
+text: $author-bio-desktop.body
+role: $inherited.types.copy-regular
+
+-- end: ftd.column
+
+-- end: author-bio-desktop
+
+
+
+
+
+
+
+
+
+
+-- component author-bio-mobile:
+caption title:
+string profile:
+optional string company:
+ftd.image-src avatar:
+body body:
+
+-- ftd.column:
+width: fill-container
+color: $inherited.colors.text
+spacing.fixed.px: 16
+margin-top.px: 12
+margin-bottom.px: 12
+align-content: center
+
+-- ftd.image:
+src: $author-bio-mobile.avatar
+width.fixed.px: 132
+height.fixed.px: 132
+border-radius.px: 500
+
+-- ftd.column:
+align-content: center
+
+-- ftd.text: $author-bio-mobile.title
+role: $inherited.types.heading-small
+color: $inherited.colors.text-strong
+
+-- ftd.text: $author-bio-mobile.profile
+role: $inherited.types.copy-small
+
+-- ftd.text: $author-bio-mobile.company
+role: $inherited.types.copy-small
+
+-- end: ftd.column
+
+-- ftd.text:
+text: $author-bio-mobile.body
+role: $inherited.types.fine-print
+
+-- end: ftd.column
+
+-- end: author-bio-mobile

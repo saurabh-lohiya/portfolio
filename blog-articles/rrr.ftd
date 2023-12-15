@@ -1,11 +1,11 @@
--- import: saurabh-lohiya.github.io/portfolio/blog-authors/nandhini as author
+-- import: nandhinidevie.github.io/portfolio/blog-authors/nandhini as author
 -- import: fastn-community.github.io/bling/quote
 
 
 
--- common.post-meta meta: The Real RRR of Sustainable Digital Marketing. It's not Reduce, Reuse and Recycle.
+-- self-common.post-meta meta: The Real RRR of Sustainable Digital Marketing. It's not Reduce, Reuse and Recycle.
 published-on: May 8, 2023 at 11:11 pam
-post-image: $assets.files.assets.rrr.png
+post-image: $self-assets.files.assets.rrr.png
 post-url: blog-articles/rrr/
 author: $author.nandhini
 social-list: $common.share-links
@@ -24,7 +24,7 @@ consumption habits.
 
 -- pf.page:
 
--- pf.post: 
+-- self.post:
 meta: $meta
 
 -- quote.marengo-hug: Nandhini
@@ -96,7 +96,7 @@ Drop me a message to talk about how I can help your green business take off.
 Thanks for reading!
 
 
--- end: pf.post
+-- end: self.post
 
 -- end: pf.page
 

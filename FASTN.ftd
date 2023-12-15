@@ -1,6 +1,6 @@
 -- import: fastn
 
--- fastn.package: saurabh-lohiya.github.io/portfolio
+-- fastn.package: nandhinidevie.github.io/portfolio
 favicon: /-/saurabh-lohiya.github.io/portfolio/favicon.ico
 
 -- fastn.dependency: fastn-community.github.io/site-doc as site-doc
@@ -14,7 +14,10 @@ favicon: /-/saurabh-lohiya.github.io/portfolio/favicon.ico
 
 -- fastn.auto-import: saurabh-lohiya.github.io/portfolio/FASTN/ds
 -- fastn.auto-import: saurabh-lohiya.github.io/portfolio/common
+-- fastn.auto-import: nandhinidevie.github.io/portfolio as self
+-- fastn.auto-import: nandhinidevie.github.io/portfolio/common as self-common
 -- fastn.auto-import: saurabh-lohiya.github.io/portfolio/assets
+-- fastn.auto-import: nandhinidevie.github.io/portfolio/assets as self-assets
 -- fastn.auto-import: site-doc
 -- fastn.auto-import: doc-site
 -- fastn.auto-import: cb
